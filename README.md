@@ -1,4 +1,5 @@
 # ofip-observatorio-web-scrap
+# [More updates soon!]
 The academic project "Observatório de Fontes de Informação Pública"(Public Informations Sources Observatory) a.k.a "ofip" or "piso" is a project
 that observes sites and web sources around specifics kinds of informations, collectings news and articles by web scraping the web analysed web-sites.
 
