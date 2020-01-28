@@ -1,0 +1,24 @@
+{
+    "sites" : [
+        {
+            "name": "sulbahianews",
+            "parent_tag": {
+                "tag": "div",
+                "tag_css_class":  "element ordem_"
+            },
+            "sub_tags": [
+                {
+                    "tag": "p",
+                    "sub_tag_css_class" : null
+                }
+            ],
+            "text-replace": ["<p>", "</p>"]
+        },
+        {
+            "name": "gazetabrasil",
+            "parent_tag" : {
+                "tag":
+            }
+        }
+    ]
+}
