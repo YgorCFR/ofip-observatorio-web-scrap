@@ -50,6 +50,7 @@ driver = webdriver.Chrome("chromedriver.exe", options=op)
 # driver.get('https://valor.globo.com/financas/noticia/2020/01/27/aversao-ao-risco-com-coronavirus-derruba-bolsa-e-leva-dolar-a-r-422.ghtml')
 # driver.get('https://oglobo.globo.com/sociedade/saude/coronavirus-que-se-sabe-ate-agora-24204619')
 # driver.get('https://brasil.elpais.com/internacional/2020-01-26/china-avisa-que-a-capacidade-de-contagio-do-coronavirus-se-torna-mais-forte.html')
+driver.get('http://agenciabrasil.ebc.com.br/internacional/noticia/2019-11/brasil-entrega-presidencia-do-brics-e-destaca-trabalho-em-inovacao')
 content = driver.page_source
 
 soup = BeautifulSoup(content, features='lxml')
@@ -71,22 +72,45 @@ soup = BeautifulSoup(content, features='lxml')
 # except Exception as ex:
 #     raise Exception(ex)
 
-''' FONTE 5 '''  #brasil.elpais.com/
-texto = ''
-try:
-    for a in soup.findAll('p', attrs={'class':''}):
-        texto = texto + str(a)
-    while texto.__contains__('<a') == True:
-        texto = texto.replace(texto[texto.index('<a'):texto.index('_blank\">')+ len('_blank\">')], "")
-    while texto.__contains__('</a>') == True:
-        texto = texto.replace("</a>","")
-    while texto.__contains__('<p') == True:
-        texto = texto.replace(texto[texto.index('<p'):texto.index('class=\"\">')+ len('class=\"\">')], "")
-    while texto.__contains__('</p>') == True:
-        texto = texto.replace('</p>', "")
-    print(texto)
-except Exception as ex:
-    raise Exception(ex)
+# ''' FONTE 5 '''  #brasil.elpais.com/
+# texto = ''
+# try:
+#     for a in soup.findAll('p', attrs={'class':''}):
+#         texto = texto + str(a)
+#     while texto.__contains__('<a') == True:
+#         texto = texto.replace(texto[texto.index('<a'):texto.index('_blank\">')+ len('_blank\">')], "")
+#     while texto.__contains__('</a>') == True:
+#         texto = texto.replace("</a>","")
+#     while texto.__contains__('<p') == True:
+#         texto = texto.replace(texto[texto.index('<p'):texto.index('class=\"\">')+ len('class=\"\">')], "")
+#     while texto.__contains__('</p>') == True:
+#         texto = texto.replace('</p>', "")
+#     print(texto)
+# except Exception as ex:
+#     raise Exception(ex)
+
+# ''' FONTE 6 ''' #http://agenciabrasil.ebc.com.br/
+# texto = ''
+# try:
+#     for a in soup.findAll('article',attrs={'class':''}):
+#         ex = a.findAll('p')
+#         texto = texto + str(ex)
+#     while texto.__contains__('<a') == True:
+#         texto = texto.replace(texto[texto.index('<a'):texto.index('_blank\">')+ len('_blank\">')], "")
+#     while texto.__contains__('</a>') == True:
+#         texto = texto.replace("</a>","")
+#     while texto.__contains__('<p>') == True or texto.__contains__('</p>') == True:
+#         texto = texto.replace("<p>","").replace('</p>', "")
+#     while texto.__contains__('<strong>') == True or texto.__contains__('</strong>') == True:
+#         texto = texto.replace("<strong>","").replace("</strong>","")
+#     while texto.__contains__('<!--') == True:
+#         texto = texto.replace(texto[texto.index('<!--'):texto.index('-->')+ len('-->')], "")
+#     while texto.__contains__('[') == True or texto.__contains__(']') == True:
+#         texto = texto.replace("[","").replace("]","")
+#     texto = texto.replace("<p class=\"compartilhar_rotulo visible-sm-block\">","").replace("<p class=\"meta\">","")
+#     print(texto)
+# except Exception as ex:
+#     raise Exception(ex)
 
 # '''FONTE 1'''
 # # r = str(soup).count('element ordem_')
