@@ -1,8 +1,8 @@
 #Setting google's custom search api keys
 #API key
-api_key = "***"
+api_key = "*********"
 #id cse
-cse_id = "***"
+cse_id = "*********"
 #import google search api module
 from googleapiclient.discovery import build
 
@@ -10,7 +10,7 @@ from googleapiclient.discovery import build
 #parameter: daysBefore:
 daysBefore = "d2"
 #parameter: language:
-language = "lang_pt" 
+language = 'lang_pt' 
 
 #Using google search api function
 def google_search(search_term, api_key, cse_id, period, lang,**kwargs):
