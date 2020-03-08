@@ -1,24 +1,604 @@
 {
-    "sites" : [
+    "site_info": [
         {
-            "name": "sulbahianews",
-            "parent_tag": {
-                "tag": "div",
-                "tag_css_class":  "element ordem_"
+            "name" : "www.defesanet.com.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
             },
-            "sub_tags": [
+            "text_to_replace": [
                 {
-                    "tag": "p",
-                    "sub_tag_css_class" : null
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
                 }
-            ],
-            "text-replace": ["<p>", "</p>"]
+            ]
         },
         {
-            "name": "gazetabrasil",
-            "parent_tag" : {
-                "tag":
-            }
+            "name" : "www.portaldaindustria.com.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "www.agricultura.gov.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "trabalho.gov.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "www.brasil247.com",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "www.correiobraziliense.com.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "itemprop",
+                "att_value" : "articleBody"
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "portal.fgv.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "field-item even"
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "economia.uol.com.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "text"
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "www.itamaraty.gov.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : "style",
+                "att_value" : "text-align: justify;"
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "br.sputniknews.com",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "b-article__text"
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "www1.folha.uol.com.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "c-news__content"
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 1,
+                    "start" : "ic_share",
+                    "end" : "Copiar link Ícone fechar"
+                },
+                {
+                    "replace_type" : 2,
+                    "start" : "Facebook WhatsApp Twitter",
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "noticias.uol.com.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "text has-image"
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "noticias.r7.com/",
+            "tag1" : "article",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "content"
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "www.gazetadopovo.com.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : "tabindex",
+                "att_value" : "0"
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "www.saude.gov.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 2,
+                    "start" : "Clique aqui",
+                    "end" : null
+                }
+            ]           
+        },
+        {
+            "name" : "theintercept.com",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "PostContent"
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "www.rtp.pt",
+            "tag1" : "section",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "article-body"
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 1,
+                    "start" : "00:00",
+                    "end" : "();"
+                }
+            ]
+        },
+        {
+            "name" : "www.ufrpe.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "field-item even"
+            },
+            "text_to_replace" : [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "www.bricspolicycenter.org",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "tribe-events-single-event-description tribe-events-content"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.uol.com.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "text"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "saude.estadao.com.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "n--noticia__content content"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.dw.com/",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "longText"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.infomoney.com.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace" : [{
+                "replace_type" : 3,
+                "start" : null,
+                "end" : " – "
+            }]
+        },
+        {
+            "name" : "economia.estadao.com.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "n--noticia__content content"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        }, 
+        {
+            "name" : "www.nexojornal.com.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "Default__text-area___38Dm5"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 2,
+                "start" : "Saiba mais.",
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.rfi.fr/br/",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "exame.abril.com.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : ""
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "g1.globo.com",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "content-text__container"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "valor.globo.com/",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "content-text__container"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "brasil.elpais.com/",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : ""
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "agenciabrasil.ebc.com.br/",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : ""
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www12.senado.leg.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "id",
+                "att_value" : "textoMateria"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "transportes.gov.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "id",
+                "att_value" : "article_fulltext"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.abin.gov.br/",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.greenpeace.org",
+            "tag1" : "article",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "post-details clearfix"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.usp.br/",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "id",
+                "att_value" : "content"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.scientificamerican.com",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "mura-region-local"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "thediplomat.com/",
+            "tag1" : "section",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "td-prose ng-scope"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.inpi.gov.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "property",
+                "att_value" : "rnews:articleBody"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.poder360.com.br/",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace" : [{
+                "replace_type" : 2,
+                "start" : "Poder360 enviar",
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.cartacapital.com.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "eltdf-post-text-inner clearfix"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "br.noticias.yahoo.com",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "canvas-atom canvas-text Mb(1.0em) Mb(0)--sm Mt(0.8em)--sm"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.diariodepernambuco.com.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "news_body"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 2,
+                "start" : "Add",
+                "end" : null
+            }]
         }
     ]
 }
