@@ -5,9 +5,10 @@ from configs import scrap as s
 import pandas as pd
 
 def main():
+    
     #get palavras_chave
-    key_words = f.list_desired_values(_.db.select([_.palavra_chave.columns.valor]))
-    processed_data = f.process_api_data(key_words,'', '', '', '', '', [], ['Description', 'DatePublish', 'Title', 'Url', 'Source'])
+    key_words = f.list_desired_values(_.db.select([_.palavra_chave.columns.valor, _.palavra_chave.columns.id]))
+    processed_data = f.process_api_data(key_words,'', '', '', '', '', '', [], ['Description', 'DatePublish', 'Title', 'Url', 'Source', 'KeyWordId'])
     #print(processed_data['Url'])
     #get existing sources.
     get_list_of_db_sources = f.list_desired_values(_.db.select([_.veiculo.columns.site]))
@@ -25,14 +26,24 @@ def main():
     
     #drop duplicates to save the url's:
     wipe_df_duplicate_rows = f.wipe_duplicate_rows(processed_data, "Url")
-    wipe_df = f.wiping_df_from_existing_data(wipe_df_duplicate_rows, f.list_desired_values(_.db.select([_.fonte.columns.fonte])), 'Url')
+    wipe_df = f.wiping_df_from_existing_data(wipe_df_duplicate_rows, f.list_desired_values(_.db.select([_.fonte.columns.fonte])), 'Url', False)
 
-    #getting list of sources and saving url's.
+    #getting list of urls, sites_ids and keywords_ids and saving them.
     get_list_of_df_url = f.turn_df_column_to_list_repeatable(wipe_df['Url'])
     get_list_of_df_sites_id = f.turn_df_column_to_list_repeatable(wipe_df['Site_ID'])
-    
-    #saving url's
-    f.save(_.fonte ,f.combine_lists(get_list_of_df_url, get_list_of_df_sites_id))    
+    get_list_of_df_keywords_id = f.turn_df_column_to_list_repeatable(wipe_df['KeyWordId'])
+
+    #saving to 'fonte' table
+    f.save(_.fonte ,f.combine_three_lists(get_list_of_df_url, get_list_of_df_sites_id, get_list_of_df_keywords_id))    
+
+
+    s.scrap(processed_data)
+
+    #retrieving url's ids.
+    urls_id = f.id_per_value(list(processed_data['Url']), _.fonte.columns.id, _.fonte.columns.fonte)
+    processed_data['Url_ID'] = urls_id
+    print(processed_data['Url_ID'])
+
 
 
 if __name__ == "__main__":
