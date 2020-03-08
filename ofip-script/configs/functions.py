@@ -44,6 +44,11 @@ def combine_lists(arg1, arg2):
         combined.append([arg1[item], arg2[item]])
     return combined
 
+def combine_three_lists(arg1, arg2, arg3):
+    combined = []
+    for item in range(len(arg1)):
+        combined.append([arg1[item], arg2[item], arg3[item]])
+    return combined
 
 def save(table, content):
     data = []
@@ -87,30 +92,34 @@ def proccess_item(term, final, item, og_item):
         except:
             pass
 
+def proccess_keyword(keyword_analysed):
+    keyword_analysed = keyword_analysed.strip()
+    return int(keyword_analysed)
 
-
-def process_date(date_analysed):
+def proccess_date(date_analysed):
     try:
         date_analysed = date_analysed['pagemap']['metatags'][0]['article:published_time']
         return date_analysed
     except:
         return (datetime.today() - timedelta(days=int(api.daysBefore[1:]))).strftime("%Y-%m-%d %H:%M:%S")
 
-def process_api_data(indexes=None,description=None, datePublish=None, title=None, url=None, source=None, data=None, columns=[]):
+def process_api_data(indexes=None,description=None, datePublish=None, title=None, url=None, source=None, keyword_id=None, data=None, columns=[]):
     #Defining empty DataFrame
     dfMain = pd.DataFrame()
-    for index in indexes:
-        response = api.google_search(index, api.api_key, api.cse_id, api.daysBefore, api.language)
+    for indexItem in indexes:
+        index = indexItem.split(',')
+        response = api.google_search("{0} {1}".format(index[0],"noticias"), api.api_key, api.cse_id, api.daysBefore, api.language)
         dataResponse = json.dumps(response)
         responseFormatted = json.loads(dataResponse)
         result = responseFormatted['items']
         for item in range(len(result)):  
             description = proccess_item(result[item], 10, 'snippet', 'og:description')    
-            datePublish = process_date(result[item])
+            datePublish = proccess_date(result[item])
             title = proccess_item(result[item], 5,'title', 'og:title')
             url = proccess_item(result[item], 10, 'link', 'og:url')
             source = proccess_item(result[item], 5,'displayLink', 'author')
-            data.append([description, datePublish, title, url, source])
+            keyword_id = proccess_keyword(index[1].replace(")", ""))
+            data.append([description, datePublish, title, url, source, keyword_id])
             
 
     df = pd.DataFrame(data, columns=columns)
@@ -135,8 +144,8 @@ def analysing_df_first_treatment(df):
     del df['Url2']
     return df
 
-def wiping_df_from_existing_data(df, list_, column):
-    df = df[df[column].isin(list_) == False]
+def wiping_df_from_existing_data(df, list_, column, value):
+    df = df[df[column].isin(list_) == value]
     return df
 
 def analysing_df_second_treatment(df):
@@ -145,9 +154,9 @@ def analysing_df_second_treatment(df):
         return x['Pos-Url']
      
     dfSource = df
-    with open("configs/unwanted.json") as file:
+    with open("configs/unwanted.json", encoding="utf-8") as file:
         data = json.load(file)
-        dfSource = dfSource[dfSource['Url'].isin(list(data['uwanted_sites_names'])) != True]
+        dfSource = dfSource[dfSource['Source'].isin(list(data['uwanted_sites_names'])) != True]
         print(dfSource['Url'])
         dfSource['Pos-Url'] = dfSource['Url'].apply(lambda x: x.replace('http://', '').replace('https://', ''))
         dfSource['Pos-Url'] = dfSource.apply(f, axis=1)
