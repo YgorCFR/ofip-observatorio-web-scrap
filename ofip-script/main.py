@@ -36,15 +36,18 @@ def main():
     #saving to 'fonte' table
     f.save(_.fonte ,f.combine_three_lists(get_list_of_df_url, get_list_of_df_sites_id, get_list_of_df_keywords_id))    
 
-
-    s.scrap(processed_data)
-
+    #get list of news processed.
+    list_of_news = s.scrap(processed_data)
+    
+    #appending the news to the dataframe
+    processed_data = f.append_the_news_to_dataframe(processed_data, list_of_news)
+    
     #retrieving url's ids.
     urls_id = f.id_per_value(list(processed_data['Url']), _.fonte.columns.id, _.fonte.columns.fonte)
     processed_data['Url_ID'] = urls_id
-    print(processed_data['Url_ID'])
+    print(processed_data.columns)
 
-
+    
 
 if __name__ == "__main__":
     main()
