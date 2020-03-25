@@ -1,3 +1,5 @@
+import scrapy
+from scrapy.crawler import CrawlerProcess
 from selenium import webdriver
 from bs4 import BeautifulSoup
 import json
@@ -5,6 +7,45 @@ import os
 import re
 from xml.etree import ElementTree as etree
 import pandas as pd
+from scrapy.utils.project import get_project_settings
+from scrapy import signals
+from scrapy.signalmanager import dispatcher
+import logging
+from scrapy.utils.log import configure_logging
+
+
+
+configure_logging(install_root_handler=True)
+logging.disable(50)  # CRITICAL = 50
+
+
+
+class MySpider(scrapy.Spider):
+    name = 'redditbot'
+    allowed_domains = []
+    start_urls = []
+    
+    def parse(self, response):
+        dic = {}
+        #Extracting the content using css selectors
+        dic["response"] = response.text
+        yield dic
+
+def spider_results():
+    results = []
+
+    def crawler_results(signal, sender, item, response, spider):
+        results.append(item)
+
+    dispatcher.connect(crawler_results, signal=signals.item_passed)
+
+    process = CrawlerProcess(get_project_settings())
+
+    process.crawl(MySpider)
+    process.start() # the script will block here until the crawling is finished
+    return results
+
+
 
 
 def prepare_scrap_configuration():
@@ -32,6 +73,8 @@ def scrap(df):
         #             print(sites['name'], url)
         web_sites_info = [[sites['name'], ind] for ind, sites in enumerate(data['site_info'])]
         
+        news_data = []
+        index = 0
         for item in df.loc[:, ['Url', 'Source']].values.tolist():
             
             searched_site = None
@@ -39,55 +82,76 @@ def scrap(df):
             att = None
             att_value = None
             text_to_replace = []
-            news_data = []
-
             if item[1] in [ i[0] for i in web_sites_info]:
                 index_site = findItem(web_sites_info, item[1])
                 searched_site = data['site_info'][index_site[0][0]]
+                news_data.append([item[0], 'C/D', searched_site])
                 tag1 = searched_site['tag1']
                 att = searched_site['attrs_?']['att']
                 att_value = searched_site['attrs_?']['att_value']
                 text_to_replace = searched_site['text_to_replace']
-                # print(text_to_replace.sort(key = lambda x : x['replace_type']))
-                result = run_scrap_script(searched_site, item[0])
-                news_data.append(result)
-        df = df.assign(News=pd.Series(news_data).values)
-        print(df['News'])
-def run_scrap_script(data, url):
+                site_name = searched_site['name']
+                MySpider.allowed_domains.append(site_name)
+                MySpider.start_urls.append(item[0])
+                # result = run_scrap_script(searched_site, item[0])
+                # news_data.append(result)
+                # MySpider.allowed_domains.clear()
+                # MySpider.start_urls.clear()
+            else:
+                news_data.append([item[0], 'S/D', searched_site])
+            index += index
+        result = run_scrap_script(news_data)                
+        print(result)
+        exit(1)
+        return news_data
+def run_scrap_script(data_info):
     try:
-        op = webdriver.ChromeOptions()
-        op.add_argument('headless')
-        op.add_argument('log-level=3')
-        driver = webdriver.Chrome("chromedriver.exe", options=op)
+        # op = webdriver.ChromeOptions()
+        # op.add_argument('headless')
+        # op.add_argument('log-level=3')
+        # driver = webdriver.Chrome("chromedriver.exe", options=op)
+        # print(url)
+        # driver.get(url)
         
-        driver.get(url)
-        
-        content = driver.page_source
-        soup = BeautifulSoup(content, features='lxml')
-        conteudo_do_site = []
-        texto = ''
-        if data['attrs_?']['att_value'] != None:
-            conteudo_do_site = soup.findAll(data['tag1'], attrs={ data['attrs_?']['att'] : data['attrs_?']['att_value']})
-        else:
-            conteudo_do_site = soup.findAll(data['tag1'])
-        for conteudo in conteudo_do_site:
-            texto = texto + str(conteudo)
-        texto_bs = BeautifulSoup(texto, features="lxml")
-        texto_bs_refinado = re.sub('\s+', ' ', texto_bs.get_text())
-        
-        for text_item in data['text_to_replace']:
-            if text_item['replace_type'] == 0:
-                break
+        # print(data)
+        # print("\n\n")
+        # print(MySpider.start_urls)
+        # print("\n\n")
+        data = [i[2] for i in data_info if i[1] == 'C/D']
+        scrap_exit = []
+        res = spider_results()
+        index = 0
+        for result in res:
+            content = str(result["response"])
+            soup = BeautifulSoup(content, features='lxml')
+            conteudo_do_site = []
+            texto = ''
+            if data[index]['attrs_?']['att_value'] != None:
+                conteudo_do_site = soup.findAll(data[index]['tag1'], attrs={ data[index]['attrs_?']['att'] : data[index]['attrs_?']['att_value']})
+            else:
+                conteudo_do_site = soup.findAll(data[index]['tag1'])
+            for conteudo in conteudo_do_site:
+                texto = texto + str(conteudo)
+            texto_bs = BeautifulSoup(texto, features="lxml")
+            texto_bs_refinado = re.sub('\s+', ' ', texto_bs.get_text())
             
-            if text_item['replace_type'] == 1:
-                texto_bs_refinado = texto_bs_refinado.replace(texto_bs_refinado[texto_bs_refinado.index(text_item['start']):texto_bs_refinado.index(text_item['end']) + len(text_item['end'])],"")
-            
-            if text_item['replace_type'] == 2:
-                texto_bs_refinado = texto_bs_refinado.replace(texto_bs_refinado[texto_bs_refinado.index(text_item['start']):],"")
+            for text_item in data[index]['text_to_replace']:
+                if text_item['replace_type'] == 0:
+                    break
+                
+                if text_item['replace_type'] == 1:
+                    if texto_bs_refinado.__contains__(text_item['start']) and texto_bs_refinado.__contains__(text_item['end']):
+                        texto_bs_refinado = texto_bs_refinado.replace(texto_bs_refinado[texto_bs_refinado.index(text_item['start']):texto_bs_refinado.index(text_item['end']) + len(text_item['end'])],"")
+                
+                if text_item['replace_type'] == 2:
+                    if texto_bs_refinado.__contains__(text_item['start']):
+                        texto_bs_refinado = texto_bs_refinado.replace(texto_bs_refinado[texto_bs_refinado.index(text_item['start']):],"")
 
-            if text_item['replace_type'] == 3:
-                texto_bs_refinado = texto_bs_refinado.replace(texto_bs_refinado[:texto_bs_refinado.index(text_item['end'])],"")
-        return texto_bs_refinado
+                if text_item['replace_type'] == 3:
+                    if texto_bs_refinado.__contains__(text_item['end']):
+                        texto_bs_refinado = texto_bs_refinado.replace(texto_bs_refinado[:texto_bs_refinado.index(text_item['end'])],"")
+            scrap_exit.append(texto_bs_refinado)
+        return scrap_exit
     except Exception as ex:
         raise ex
 
