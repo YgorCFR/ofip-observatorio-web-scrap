@@ -1,5 +1,6 @@
 #General functions
 from configs import db as _
+from configs import logs as log
 from configs import api
 import json
 import pandas as pd
@@ -169,3 +170,12 @@ def analysing_df_second_treatment(df):
 def wipe_duplicate_rows(df, subset):
     df = df.drop_duplicates(subset= subset, keep='first')
     return df
+
+def append_the_news_to_dataframe(df, news_data):
+    if len(news_data) > 0:    
+        df = df.assign(News=pd.Series(news_data).values)
+        df = df[df["News"] != 'N/D']
+        return df
+    else:
+        log.logger.warning("Script encerrado por falta de dados de notícia.")
+        exit(1)
