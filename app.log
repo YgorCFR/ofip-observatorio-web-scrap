@@ -1,0 +1,1125 @@
+root - WARNING - This will get logged to a file
+[2020-03-16 22:18:27,848]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:18:30,231]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:21:20,085]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:21:22,415]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:29:44,995]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:29:47,399]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:31:49,901]: default logger - WARNING - Script encerrado por falta de dados de notícia.
+[2020-03-16 22:34:11,762]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:34:14,682]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:36:01,031]: default logger - WARNING - Script encerrado por falta de dados de notícia.
+[2020-03-16 22:41:40,500]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:41:41,640]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:44:49,731]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:44:51,936]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:46:54,132]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:46:56,538]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:49:29,234]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:49:31,358]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:53:25,988]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:53:28,227]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:57:50,459]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 22:57:52,670]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 23:00:53,707]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 23:00:55,833]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 23:07:23,964]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 23:07:26,346]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 23:36:09,919]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 23:36:12,679]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 23:48:37,852]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-16 23:48:39,873]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-17 20:52:02,760]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-17 20:52:05,997]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-17 21:02:45,909]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-17 21:02:49,036]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-17 21:08:21,441]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-17 21:10:05,848]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-17 21:10:12,095]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-17 21:29:53,761]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-17 21:29:56,208]: googleapiclient.discovery_cache - WARNING - file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 36, in autodetect
+    from google.appengine.api import memcache
+ModuleNotFoundError: No module named 'google.appengine'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 33, in <module>
+    from oauth2client.contrib.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 37, in <module>
+    from oauth2client.locked_file import LockedFile
+ModuleNotFoundError: No module named 'oauth2client'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\__init__.py", line 41, in autodetect
+    from . import file_cache
+  File "C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\lib\site-packages\googleapiclient\discovery_cache\file_cache.py", line 41, in <module>
+    'file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth')
+ImportError: file_cache is unavailable when using oauth2client >= 4.0.0 or google-auth
+[2020-03-17 21:29:58,124]: scrapy.utils.log - INFO - Scrapy 1.7.3 started (bot: scrapybot)
+[2020-03-17 21:29:58,160]: scrapy.utils.log - INFO - Versions: lxml 4.4.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 22:20:52) [MSC v.1916 32 bit (Intel)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Windows-10-10.0.18362-SP0
+[2020-03-17 21:29:58,176]: scrapy.crawler - INFO - Overridden settings: {}
+[2020-03-17 21:29:58,232]: scrapy.extensions.telnet - INFO - Telnet Password: ddce08b7b14b8e36
+[2020-03-17 21:29:58,272]: scrapy.middleware - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+[2020-03-17 21:29:59,236]: scrapy.middleware - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[2020-03-17 21:29:59,256]: scrapy.middleware - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2020-03-17 21:29:59,264]: scrapy.middleware - INFO - Enabled item pipelines:
+[]
+[2020-03-17 21:29:59,264]: scrapy.core.engine - INFO - Spider opened
+[2020-03-17 21:29:59,284]: scrapy.extensions.logstats - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2020-03-17 21:29:59,288]: scrapy.extensions.telnet - INFO - Telnet console listening on 127.0.0.1:6023
+[2020-03-17 21:30:00,683]: scrapy.core.engine - DEBUG - Crawled (200) <GET https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754> (referer: None)
+[2020-03-17 21:30:00,787]: scrapy.core.scraper - DEBUG - Scraped from <200 https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754>
+{'response': '<!DOCTYPE html>\n<html lang="pt">\n<head>\n      <script>\n    if (location.protocol !== "https:") location.protocol = "https:";\n    </script>\n    <meta charset="utf-8">\n  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">\n\n    <meta name="title" content="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas">\n\n<link rel="shortcut icon" type="image/x-icon" href="//cdn-images.rtp.pt/common/img/favicon.ico" />\n\n<title>Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas</title>\n\n  <meta name="description" content="Na segunda-feira à noite, Boris Johnson pediu à população que evitasse o contacto social, entre outras medidas. Uma mudança de planos, até aqui sem a tomada de medidas mais restritivas, que coincide com a divulgação de um estudo que aponta para mais de 250 mil mortes no Reino Unido, caso persistisse a estratégia tomada até agora.\r\n"/>\n\n  <meta name="summary" content="Na segunda-feira à noite, Boris Johnson pediu à população que evitasse o contacto social, entre outras medidas. Uma mudança de planos, até aqui sem a tomada de medidas mais restritivas, que coincide com a divulgação de um estudo que aponta para mais de 250 mil mortes no Reino Unido, caso persistisse a estratégia tomada até agora.\r\n">\n\n    <meta name="keywords" content="RTP, Notícias, RTP Notícias"/>\n\n  \n  \n<meta name="author" content="Rádio e Televisão de Portugal">\n\n  <meta name="pubdate" content="2020-03-17 12:56:49">\n\n  <meta name="lastmod" content="2020-03-17 16:23:38">\n\n\n<link rel="profile" href="http://gmpg.org/xfn/11">\n<link rel="canonical" href="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" />\n\n<meta property="og:title" content="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" />\n<meta property="og:description" content="Na segunda-feira à noite, Boris Johnson pediu à população que evitasse o contacto social, entre outras medidas. Uma mudança de planos, até aqui sem a tomada de medidas mais restritivas, que coincide com a divulgação de um estudo que aponta para mais de 250 mil mortes no Reino Unido, caso persistisse a estratégia tomada até agora.\r\n" />\n<meta property="og:url" content="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" />\n<meta property="og:image" content="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822&amp;auto=format" />\n<meta property="og:image:alt" content="image name" />\n<meta property="og:image:type" content="image/jpeg" />\n\n<meta property="og:locale" content="pt_PT" />\n<meta property="og:type" content="article" />\n<meta property="og:site_name" content="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" />\n<meta property="og:pubdate" content="2020-03-17 12:56:49">\n<meta property="fb:admins" content="110253572394348" />\n\n<meta name="twitter:title" content="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas">\n<meta name="twitter:description" content="Na segunda-feira à noite, Boris Johnson pediu à população que evitasse o contacto social, entre outras medidas. Uma mudança de planos, até aqui sem a tomada de medidas mais restritivas, que coincide com a divulgação de um estudo que aponta para mais de 250 mil mortes no Reino Unido, caso persistisse a estratégia tomada até agora.\r\n">\n<meta name="twitter:url" content="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754">\n<meta name="twitter:image" content="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822&amp;auto=format">\n\n<meta name="twitter:card" content="summary_large_image">\n<meta name="twitter:site" content="@RTPNoticias">\n<meta name="twitter:creator" content="@RTPNoticias">\n\n<meta name="apple-itunes-app" content="app-id=449177845,app-argument=rtpnoticias://news/1/1114357">\n<meta name="google-play-app" content="app-id=pt.rtp.noticias.android">\n<meta http-equiv="X-UA-Compatible" content="IE=edge">\n\n\n<meta property="ix:srcAttribute" content="data-src">\n<meta property="ix:srcsetAttribute" content="data-srcset">\n<meta property="ix:sizesAttribute" content="data-sizes">\n\n\n<link href="//cdn-images.rtp.pt/noticias/images/apple-touch-icon-noticias.png" rel="apple-touch-icon" />\n<link href="//cdn-images.rtp.pt/noticias/images/apple-touch-icon-noticias.png" rel="apple-touch-icon-precomposed" />\n<link href="//cdn-images.rtp.pt/noticias/images/apple-touch-icon-noticias.png?w=76" rel="apple-touch-icon" sizes="76x76" />\n<link href="//cdn-images.rtp.pt/noticias/images/apple-touch-icon-noticias.png?w=120" rel="apple-touch-icon" sizes="120x120" />\n<link href="//cdn-images.rtp.pt/noticias/images/apple-touch-icon-noticias.png?w=152" rel="apple-touch-icon" sizes="152x152" />\n\n      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" type="text/css">\n\n<link rel="stylesheet" href="https://www.rtp.pt/noticias/css/vendor/fontawesome/all.min.css">\n\n<link rel="stylesheet" href="https://secure.widget.cloud.opta.net/v3/css/v3.all.opta-widgets.css">\n\n<link rel="stylesheet" href="https://secure.widget.cloud.opta.net/v3/css/v3.football.opta-widgets.css">\n\n<link href="https://www.rtp.pt/noticias/css/floatingPlayer.css" rel="stylesheet">\n\n<link rel="stylesheet" href="https://www.rtp.pt/noticias/js/vendor/OwlCarousel2/dist/assets/owl.carousel.min.css" rel="stylesheet">\n\n<link rel="stylesheet" href="https://www.rtp.pt/noticias/js/vendor/OwlCarousel2/dist/assets/owl.theme.default.min.css" rel="stylesheet">\n<link rel="stylesheet" href="https://www.rtp.pt/noticias/css/animate.min.css" rel="stylesheet">\n\n\n<link href="https://www.rtp.pt/noticias/css/app.css" rel="stylesheet">\n\n\n\n<link href="https://www.rtp.pt/noticias/css/icomoon.css" rel="stylesheet">\n<link href="https://www.rtp.pt/noticias/css/estilos.css" rel="stylesheet">\n<link href="https://www.rtp.pt/noticias/css/style.css" rel="stylesheet">\n      \n      <script>\n  imgix.config.host = \'assets.imgix.net\';\n  imgix.config.useHttps = false;\n</script>\n\n<script src="//www.rtp.pt/common/js/jquery.min.js"></script>\n\n<script src="https://www.rtp.pt/noticias/js/vendor/jquery-ui/jquery-ui.min.js"></script>\n<script src="https://www.rtp.pt/noticias/js/vendor/imgix/imgix.js"></script>\n      \n</head>\n\n<body class="" itemscope itemtype="https://schema.org/WebPage">\n\n       <script src="//www-test.rtp.pt/common/js/rtp-require.js?ver=20200305"></script>\r<link rel="stylesheet" href="//www.rtp.pt/common/css/common-bar.css"><script src="https://www.rtp.pt/common/js/build/common-bar.min.js"></script><div class="bg-takeover"><div class="container takeover"><div class="row">\r<div id=\'leaderboard\'></div></div></div><div class="layer popover" id=\'multiusos\'></div><div class="layer popover" id=\'multiusos-oop\'></div></div><div class="clear"></div>\r <div class="container-menu-rtp">\r<header class="uninav-positioner">\r    <input type="checkbox" id="uninav-menu-state" class="uninav-state uninav-menu-state" />\r    <input type="checkbox" id="uninav-search-state" class="uninav-state uninav-search-state" />\r    <div class="uninav-overlay"></div>\r    <div class="uninav-wrapper">\r        <div class="container">\r          <div class="uninav" id="uninav">\r            <a href="https://www.rtp.pt" class="uninav-channel uninav-channel-rtp">\r                        <img src="//cdn-images.rtp.pt/common/img/channels/logos/gray-negative-short/horizontal/rtp.png?w=120&amp;q=100" alt="RTP" width="60" height="30" class="uninav-logo" />\r                       </a>\r            <label for="uninav-menu-state" class="uninav-menu-toggle">\r              <span class="uninav-menu-toggle-line"></span>\r              Toggle Menu\r            </label>\r            <div class="uninav-container">\r              <nav class="uninav-menu-container">\r                <ul class="uninav-menu">\r                  <li class="mood-noticias">\r                    <a href="https://www.rtp.pt/noticias" class="uninav-menu-item" title="Homepage RTP Notícias">Notícias</a>\r                  </li>\r                  <li class="mood-desporto">\r                    <a href="https://www.rtp.pt/desporto" class="uninav-menu-item" title="Homepage RTP Notícias da área de Desporto">Desporto</a>\r                  </li>\r                                   <li class="mood-televisao">\r                    <a href="https://www.rtp.pt/tv" class="uninav-menu-item" title="Homepage de Televisão">Televisão</a>\r                  </li>\r                  <li class="mood-radio">\r                    <a href="https://www.rtp.pt/radio" class="uninav-menu-item" title="Homepage da Rádio">Rádio</a>\r                  </li>\r                                    <li class="mood-rtpplay">\r                    <a href="https://www.rtp.pt/play" class="uninav-menu-item" title="Homepage RTP Play">RTP<span class="uninav-menu-item-thin">Play</span></a>\r                  </li>\r                  <li class="mood-zigzag">\r                    <a href="https://media.rtp.pt/zigzag" class="uninav-menu-item" title="Homepage da ZigZag">ZigZag</a>\r                  </li>\r                  <li>\r                    <a href="https://arquivos.rtp.pt" class="uninav-menu-item" title="Homepage RTP Arquivo">Arquivos</a>\r                  </li>\r                  <li class="uninav-menu-more">\r                                      <a class="uninav-menu-item uninav-menu-item-more" title="Veja mais sobre conteúdo extra da RTP">+</a>\r                    <ul class="uninav-menu-panel">\r<li><h2 class="uninav-menu-title">Rede RTP</h2><ul class="uninav-menu-list"><li><a href="http://ensina.rtp.pt/" title="Rede RTP">RTP Ensina</a></li>\n<li><a href="http://museu.rtp.pt/#/pt/intro" title="Rede RTP">Museu RTP</a></li>\n<li><a href="http://www.rtp.pt/newsletter/" title="Rede RTP">Newsletters RTP</a></li>\n<li><a href="http://www.rtp.pt/academia/" title="Rede RTP">Academia RTP</a></li>\n<li><a href="http://rtp.pt/arena" title="Rede RTP">RTP Arena</a></li>\n<li><a href="http://media.rtp.pt/extra/" title="Rede RTP">Extra</a></li>\n<li><a href="http://media.rtp.pt/rtplab/" title="Rede RTP">RTP Lab</a></li>\n<li><a href="http://media.rtp.pt/nossofuturo/" title="Rede RTP">RTP: Nosso Futuro</a></li>\n</ul></li>\n<li><h2 class="uninav-menu-title"><a href="http://media.rtp.pt/institucional/aplicacao-movel/app-rtp-play/" title="Aplicações móveis">Aplicações móveis</a></h2><ul class="uninav-menu-list"><li><a href="http://media.rtp.pt/institucional/aplicacao-movel/app-rtp-play/" title="Aplicações móveis">RTP Play</a></li>\n<li><a href="http://media.rtp.pt/institucional/aplicacao-movel/app-rtp-noticias/" title="Aplicações móveis">RTP Notícias</a></li>\n<li><a href="http://media.rtp.pt/institucional/aplicacao-movel/app-zig-zag-play/" title="Aplicações móveis">Zig Zag Play</a></li>\n<li><a href="http://media.rtp.pt/empresa/aplicacao-movel/app-rtp-arquivos/" title="Aplicações móveis">App RTP Arquivos</a></li>\n</ul></li>\n<li><h2 class="uninav-menu-title"><a href="http://media.rtp.pt/institucional/" title="A empresa">A empresa</a></h2><ul class="uninav-menu-list"><li><a href="http://media.rtp.pt/institucional/contactos/gerais/" title="A empresa">Contactos</a></li>\n<li><a href="http://media.rtp.pt/institucional/contactos/candidaturas-espontaneas/" title="A empresa">Candidaturas Espontâneas</a></li>\n<li><a href="http://media.rtp.pt/institucional/rtp/organograma-2/" title="A empresa">Organograma</a></li>\n<li><a href="http://media.rtp.pt/institucional/mais-rtp/rtp/" title="A empresa">RTP+</a></li>\n<li><a href="https://media.rtp.pt/provedor-do-telespetador/" title="A empresa">Provedor do Telespetador</a></li>\n<li><a href="http://cdn-images.rtp.pt/mcm/pdf/46a/46abf70c1a4f8adf25f12420f86146a61.pdf" title="A empresa">Informação Financeira</a></li>\n<li><a href="http://media.rtp.pt/institucional/wp-content/uploads/sites/31/2015/07/contratoConcessao2015.pdf" title="A empresa">Contrato de concessão do serviço público de Rádio e de Televisão</a></li>\n<li><a href="http://media.rtp.pt/consultadeconteudos/" title="A empresa">Consulta de Conteúdos Cinematográficos</a></li>\n<li><a href="https://media.rtp.pt/empresa/provedores/provedor-do-ouvinte/" title="A empresa">Provedor do Ouvinte</a></li>\n<li><a href="http://media.rtp.pt/sandbox/?" title="A empresa">Sandbox RTP</a></li>\n</ul></li>\n<li><h2 class="uninav-menu-title"><a href="http://media.rtp.pt/empresa/" title="Institucional">Institucional</a></h2><ul class="uninav-menu-list"><li><a href="http://media.rtp.pt/institucional/identidade-grafica/rtp/" title="Institucional">Identidade gráfica</a></li>\n<li><a href="http://media.rtp.pt/institucional/mais-rtp/parcerias-comerciais/" title="Institucional">Apoios e Parcerias</a></li>\n<li><a href="http://publicidade.rtp.pt/" title="Institucional">Anunciar</a></li>\n<li><a href="http://media.rtp.pt/institucional/aplicacao-movel/app-rtp-play/" title="Institucional">Aplicações móveis</a></li>\n</ul></li>\n<li><h2 class="uninav-menu-title"><a href="http://media.rtp.pt/concursos/" title="Concursos">Concursos</a></h2><ul class="uninav-menu-list"><li><a href="https://media.rtp.pt/concursos/perguntas-frequentes/" title="Concursos">Perguntas frequentes</a></li>\n<li><a href="https://media.rtp.pt/concursos/contactos/" title="Concursos">Contactos</a></li>\n</ul></li>\n<li><h2 class="uninav-menu-title"><a href="https://media.rtp.pt/rgpd/" title="RGPD">RGPD</a></h2><ul class="uninav-menu-list"><li><a href="javascript:window.scrollTo(0,0);RTPRequireScript().showConsentLayer()" title="RGPD">Gestão das definições de Cookies</a></li>\n</ul></li>\n</ul>\r                                    </li>\r                </ul>\r              </nav>\r              <div class="uninav-search">\r                <div class="uninav-search-module">\r                  <form method="get" action="https://www.rtp.pt/pesquisa" accept-charset="utf-8" >\r                                      <div class="uninav-search-action">\r                       <a href="https://www.rtp.pt/pesquisa" class="uninav-search-toggle" title="Pesquise no site RTP"><span class="uninav-search-toggle-icon"></span>Pesquisar</a>\r                    </div>\r                                      </form>\r                </div>\r                <div class="uninav-search-panel">\r                  <h3>Found %s Results</h3>\r                </div>\r              </div>\r            </div>\r          </div>\r        </div>\r    </div>\r      </header>\r<img src="//pt-gmtdmp.mookie1.com/t/v2/learn?tagid=V2_123618&src.rand=[timestamp]&src.id=RTP_GLOBAL" style="display:none;" style="display:none;"/>\r<img src="//eu-gmtdmp.gd1.mookie1.com/tagr/v1/activity?acid=23&inst=EU&tagid=21812&src.rand=[timestamp]&trb.clientID=270&trb.activityID=21812" style="display:none;"/>\r</div>\r<div class="mask-container-menu-rtp"></div>\r\n  \n      <script src="//www.rtp.pt/common/player/build/rtp-player.min.js?v=20191023-1130"></script>\n\n\n\n  \n  <div id="noticias" class="">\n\n            <div class="worldnav-header bg-color-navbar main-nav-rtp">\n  <div class="worldnav-header bg-dark-blue container-fluid-override">\n    <div class="worldnav-header-logo-container container">\n      <nav id="navbarSecondaryNews" class=" navbar navbar-dark p-0" itemscope itemtype="http://schema.org/WPHeader">\n\n        \n            <a itemprop="url" href="#" title="RTP Notícias" class="worldnav-header-logo">\n        <img itemprop="image" src="//cdn-images.rtp.pt/common/img/channels/logos/gray-negative-short/horizontal/rtp.png?w=120&amp;q=100&amp;fm=png32" alt="logo" title="logo rtp" width="auto" height="16" class="uninav-logo">\n     </a>\n     <a itemprop="url" href="https://www.rtp.pt/noticias" class="worldnav-logo-noticias" >\n         <span class="worldnav-logo"><img itemprop="image" src="//cdn-images.rtp.pt//common/img/channels/logos/gray-negative-short/horizontal/rtp-label.png?h=56&amp;fm=png32" alt="RTP Notícias" title="RTP Notícias"></span>\n         <span class="worldnav-logo-text text-white text-uppercase">Notícias</span>\n     </a>\n   \n        \n             <ul itemscope itemtype="http://schema.org/SiteNavigationElement" class="navbar-nav ml-3 mr-auto d-none d-lg-inline-block">\n                <li itemprop="name" class="nav-item ">\n\n           <a itemprop="url" title="País" class="nav-link" id="nav-main-link-pais" href="https://www.rtp.pt/noticias/pais">\n             País\n           </a>\n\n         </li>\n                <li itemprop="name" class="nav-item active">\n\n           <a itemprop="url" title="Mundo" class="nav-link" id="nav-main-link-mundo" href="https://www.rtp.pt/noticias/mundo">\n             Mundo\n           </a>\n\n         </li>\n                <li itemprop="name" class="nav-item ">\n\n           <a itemprop="url" title="Política" class="nav-link" id="nav-main-link-politica" href="https://www.rtp.pt/noticias/politica">\n             Política\n           </a>\n\n         </li>\n                <li itemprop="name" class="nav-item ">\n\n           <a itemprop="url" title="Economia" class="nav-link" id="nav-main-link-economia" href="https://www.rtp.pt/noticias/economia">\n             Economia\n           </a>\n\n         </li>\n                <li itemprop="name" class="nav-item ">\n\n           <a itemprop="url" title="Cultura" class="nav-link" id="nav-main-link-cultura" href="https://www.rtp.pt/noticias/cultura">\n             Cultura\n           </a>\n\n         </li>\n                <li itemprop="name" class="nav-item ">\n\n           <a itemprop="url" title="Vídeos" class="nav-link" id="nav-main-link-videos" href="https://www.rtp.pt/noticias/videos">\n             Vídeos\n           </a>\n\n         </li>\n                <li itemprop="name" class="nav-item ">\n\n           <a itemprop="url" title="Áudios" class="nav-link" id="nav-main-link-audios" href="https://www.rtp.pt/noticias/audios">\n             Áudios\n           </a>\n\n         </li>\n                <li itemprop="name" class="nav-item ">\n\n           <a itemprop="url" title="Covid-19" class="nav-link" id="nav-main-link-covid19" href="https://www.rtp.pt/noticias/covid-19">\n             Covid-19\n           </a>\n\n         </li>\n              <li itemprop="name" class="nav-item">\n           <span>|</span>\n       </li>\n       <li itemprop="name" class="nav-item">\n           <a itemprop="url" title="RTP Desporto" class="nav-link" href="https://www.rtp.pt/noticias/desporto">\n               <b>RTP</b>\n               Desporto\n           </a>\n       </li>\n     </ul>\n   \n        \n                  <div class="worldnav-search-noticias desktop d-none d-lg-block" id="search-desktop">\n    <div class="worldnav-search-module">\n      <form method="get" action="//www.rtp.pt/pesquisa" accept-charset="utf-8">\n          <a href="#" class="search-icon">\n              <i class="fal fa-search"></i>\n          </a>\n          <div class="container-search">\n              <div class="worldnav-search-query float-left">\n                <input type="text" name="q" value="" placeholder="Pesquisar" class="worldnav-search-query-input">\n              </div>\n              <div class="worldnav-search-action float-left">\n                <button type="submit" class="worldnav-search-button">ok</button>\n              </div>\n          </div>\n      </form>\n    </div>\n  </div>\n        \n        \n                  <button class="navbar-toggler" data-target="#navbarSecondary,#menu-extension"\naria-controls="navbarSecondary, menu-extension" aria-expanded="false" aria-label="Toggle navigation">\n\n  <span class="fal fa-bars"></span>\n\n</button>\n        \n      </nav>\n    </div>\n  </div>\n</div>\n\n<div class="bg-overlay-mask"></div>\n\n<div id="modalOne" class="modal_1">\n    <div class="container relative navbar-collapsed-container">\n    \n    <div class="collapse-after" id="menu-extension"><div class="nav-padder container" id="nav-padder"></div></div>\n        <div class="navbar-collapse" id="navbarSecondary">\n\n        \n                <div class="worldnav-search-noticias-mobile container-fluid-override d-md-block d-lg-none" id="search-mobile">\n  <div class="worldnav-search-module row">\n    <form method="get" action="//www.rtp.pt/pesquisa" accept-charset="utf-8" class="col-12">\n      <div class="worldnav-search-query float-left col-12">\n        <input type="text" name="q" value="" placeholder="Procurar notícias" class="worldnav-search-query-input">\n      </div>\n      <div class="worldnav-search-action float-left">\n        <button type="submit" class="worldnav-search-button">ok</button>\n      </div>\n    </form>\n  </div>\n</div>\n    \n<a href="#" class="close-nav"><i class="fal fa-times"></i></a>\n    <div class="nav-padder container" id="nav-padder">\n\n\n\n      \n              <ul itemscope itemtype="http://schema.org/SiteNavigationElement">\n  <li itemprop="name"><p>ÁREAS</p></li>\n  <li itemprop="name"><a itemprop="url" href="https://www.rtp.pt/noticias" title="Notícias">Notícias</a></li>\n  <li itemprop="name"><a itemprop="url" href="https://www.rtp.pt/noticias/desporto" title="Desporto">Desporto</a></li>\n  <li itemprop="name"><a itemprop="url" href="http://www.rtp.pt/acores/" title="Açores" target="_blank">Açores</a></li>\n  <li itemprop="name"><a itemprop="url" href="http://www.rtp.pt/madeira/" title="Madeira" target="_blank">Madeira</a></li>\n</ul>\n      \n      \n          <ul itemscope itemtype="http://schema.org/SiteNavigationElement">\n        <li itemprop="name"><p>SECÇÕES</p></li>\n                  <li itemprop="name">\n            <a itemprop="url" href="https://www.rtp.pt/noticias/pais" title="País">País</a>\n          </li>\n                  <li itemprop="name">\n            <a itemprop="url" href="https://www.rtp.pt/noticias/mundo" title="Mundo">Mundo</a>\n          </li>\n                  <li itemprop="name">\n            <a itemprop="url" href="https://www.rtp.pt/noticias/politica" title="Política">Política</a>\n          </li>\n                  <li itemprop="name">\n            <a itemprop="url" href="https://www.rtp.pt/noticias/economia" title="Economia">Economia</a>\n          </li>\n                  <li itemprop="name">\n            <a itemprop="url" href="https://www.rtp.pt/noticias/cultura" title="Cultura">Cultura</a>\n          </li>\n                  <li itemprop="name">\n            <a itemprop="url" href="https://www.rtp.pt/noticias/videos" title="Vídeos">Vídeos</a>\n          </li>\n                  <li itemprop="name">\n            <a itemprop="url" href="https://www.rtp.pt/noticias/audios" title="Áudios">Áudios</a>\n          </li>\n                  <li itemprop="name">\n            <a itemprop="url" href="https://www.rtp.pt/noticias/covid-19" title="Covid-19">Covid-19</a>\n          </li>\n                \n        <li itemprop="name"><a itemprop="url" href="https://www.rtp.pt/noticias/imagem-do-dia" title="Imagem do dia">Imagem do dia</a></li>\n        <li itemprop="name"><a itemprop="url" href="https://www.rtp.pt/noticias/galeria" title="Galerias">Galerias</a></li>\n        <li itemprop="name"><a itemprop="url" href="https://www.rtp.pt/noticias/infografias" title="Infografias">Infografias</a></li>\n    </ul>\n    \n\n      \n              <ul>\n  <li itemprop="name"><p>ESPECIAIS</p></li>\n  <li itemprop="name"><a itemprop="url" href="https://www.rtp.pt/noticias/eleicoes-legislativas-2019" title="">Eleições Legislativas 2019</a></li>\n  <li itemprop="name"><a itemprop="url" href="https://www.rtp.pt/noticias/rtpeuropa" title="">RTP Europa</a></li>\n</ul>\n      \n      \n              <ul>\n  <li itemprop="name"><p>EM DIRETO</p></li>\n  <li itemprop="name"><a itemprop="url" href="//www.rtp.pt/play/direto/rtp3" title="Direto RTP3" target="_blank">RTP3</a></li>\n  <li itemprop="name"><a itemprop="url" href="//www.rtp.pt/play/direto/antena1" title="Direto Antena1" target="_blank">Antena1</a></li>\n</ul>\n      \n      \n              <ul>\n  <li itemprop="name"><p>NEWSLETTERS</p></li>\n  <li itemprop="name"><a itemprop="url" href="//www.rtp.pt/newsletter/" target="_blank">O Essencial</a></li>\n  <li itemprop="name"><a itemprop="url" href="//www.rtp.pt/newsletter/" target="_blank">O Essencial da Manhã</a></li>\n</ul>\n      \n      \n              <div class="social-icons-container">\n\n  <span class="call-to-action">Instale a app RTP Notícias</span>\n\n  <div class="app-icons-buttons">\n    <a target="_blank" itemprop="url" title="Aplicação RTP Notícias para dispositivos IOS" href="//itunes.apple.com/pt/app/rtp/id449177845" class="d-none d-lg-inline-block">\n      <img itemprop="image" height="40" src="//cdn-images.rtp.pt/noticias/images/AppleStore.png" alt="Apple Store">\n    </a>\n    <a target="_blank" itemprop="url" title="Aplicação RTP Notícias para dispositivos IOS" href="//itunes.apple.com/pt/app/rtp/id449177845" class="d-inline-block d-lg-none">\n      <img itemprop="image" height="40" src="//cdn-images.rtp.pt/noticias/images/AppleStore-dark.png" alt="Apple Store">\n    </a>\n    <a target="_blank" title="Aplicação RTP Notícias para dispositivos Android" href="//play.google.com/store/apps/details?id=pt.rtp.noticias.android" class="d-none d-lg-inline-block">\n      <img itemprop="image" height="40" src="//cdn-images.rtp.pt/noticias/images/GooglePlay.png" alt="Google Play">\n    </a>\n    <a target="_blank" itemprop="url" title="Aplicação RTP Notícias para dispositivos Android" href="//play.google.com/store/apps/details?id=pt.rtp.noticias.android" class="d-inline-block d-lg-none">\n      <img itemprop="image" height="40" src="//cdn-images.rtp.pt/noticias/images/GooglePlay-dark.png" alt="Google Play">\n    </a>\n  </div>\n\n  <p>SIGA-NOS</p>\n\n  <div class="social-icons">\n    <a target="_blank" rel="nofollow noopener noreferrer" data-wpel-link="external" href="//www.facebook.com/rtpnoticias"><i class="icon-icone_facebook"></i></a>\n    <a target="_blank" rel="nofollow noopener noreferrer" data-wpel-link="external" href="//twitter.com/rtpnoticias"><i class="icon-icone_twitter"></i></a>\n    <a rel="nofollow noopener noreferrer" data-wpel-link="external" href="/noticias/rss/feeds"><i class="fas fa-rss"></i></a>\n  </div>\n\n</div>\n      \n      \n              <div class="rgpd-links">\n  <a itemprop="url" class="text-gray" href="http://media.rtp.pt/rgpd/politica-de-privacidade/" title="Política de privacidade">Política de privacidade</a>\n  <a itemprop="url" class="text-gray" href="http://media.rtp.pt/rgpd/termos-e-condicoes/" title="Termos e condições">Termos e condições</a>\n  <a itemprop="url" class="text-gray" href="http://media.rtp.pt/empresa/contactos/gerais/" title="Contactos">Contactos</a>\n  \n      <span class="copy">© RTP, Rádio e Televisão de Portugal 2020</span>\n  </div>\n      \n    </div>\n        \n        </div>\n    </div>\n</div>\n\n \n        \n    \n              \n    <div class="container main-content margin-top">\n\n              \n    <div class="row">\n\n    \n              \n      <div class="col-12 col-lg-8 px-0" id="articles-container">\n                  <article id=\'article_content_1212754\' role="article" itemscope itemtype="http://schema.org/NewsArticle" class="bg-color px-0 padding-top-20 margin-bottom-20 playlist-item" data-playlist-item-id="1212754" data-playlist-item-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754">\n\n<link itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" href="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754"/>\n\n      <div class="container px-0">\n    <div class="row topics mx-3 ml-md-5 mr-md-5 mr-lg-3">\n      <div class="col-12 col-sm-6 px-0">\n        <span class="artigo-categoria text-color">\n          <a class="article_topic text-color" href="https://www.rtp.pt/noticias/mundo" title="Mundo" itemprop="url">\n      <span itemprop="keywords" rel="tag">Mundo</span>\n    </a>\n  \n  \n  \n  \n  \n\n\n        </span>\n      </div>\n\n      <div class="d-none d-sm-block col-sm-6 text-sm-right px-0">\n        <div class="artigo-data d-inline-flex">\n          <time class="text-gray" itemprop="datePublished dateModified">\n            <time id="ct_mod_196Y9IeUQz" class="timeago ct_mod" itemprop="datePublished dateModified" datetime="2020-03-17T16:23:38Z" title="atualizado 17 Março 2020, 16:23" pub-data="publicado 17 Março 2020, 12:56" >\n        </time>\n    \n  \n  \n          </time>\n        </div>\n      </div>\n    </div>\n\n\n      <div class="mx-3 mx-md-5 article-main-title">\n              <h1 itemprop="headline">\n            Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas\n        </h1>\n          </div>\n  \n  <div class="d-block d-sm-none col-12 date-mobile">\n    <div class="artigo-data d-inline-flex">\n      <time class="text-gray" itemprop="datePublished dateModified">\n        <time id="ct_mod_uCPGlSbZS0" class="timeago ct_mod" itemprop="datePublished dateModified" datetime="2020-03-17T16:23:38Z" title="atualizado 17 Março 2020, 16:23" pub-data="publicado 17 Março 2020, 12:56" >\n        </time>\n    \n  \n  \n      </time>\n    </div>\n  </div>\n\n\n      <div class="mx-3 ml-md-5 mr-md-5 mr-lg-3 margin-bottom-30 autor-meta">\n      <div class="row">\n        <div class="col-10 col-sm-6 autor-block">\n          <div class="text-autor">\n            <span>              por RTP\n                        </span>\n          </div>\n        </div>\n        <div class="h7 col-2 col-sm-6 socials d-print-none text-right">\n          <div class="sharethis-custom-share-buttons d-none d-sm-block">\n    <ul class="redes-sociais" id="my-inline-buttons-1212754">\n      <span class="st_sharethis st-custom-button st-hide-label" data-network="facebook" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar">\n        <li class="social_buttons d-inline d-print-none">\n            <i class="icon-icone_facebook" aria-hidden="true"></i>\n        </li>\n      </span>\n      <span class="st_sharethis st-custom-button st-hide-label" data-network="twitter" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar">\n        <li class="ml-3 ml-sm-0 social_buttons d-inline d-print-none">\n        <i class="icon-icone_twitter" aria-hidden="true"></i>\n      </li>\n      </span>\n      <span class="st_sharethis st-custom-button st-hide-label" data-network="messenger" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar">\n        <li class="ml-3 ml-sm-0 social_buttons d-inline d-print-none">\n            <i class="icon-icone_messenger"></i>\n        </li>\n      </span>\n      <span class="st_sharethis st-custom-button st-hide-label" data-network="email" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar">\n        <li class="ml-3 ml-sm-0 social_buttons d-inline d-print-none">\n            <i class="icon-icone_email" aria-hidden="true"></i>\n        </li>\n      </span>\n      <span class="st_sharethis st-custom-button st-hide-label" data-network="sharethis" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar">\n        <li class="ml-3 ml-sm-0 social_buttons d-inline d-print-none">\n            <i class="icon-share" aria-hidden="true"></i>\n        </li>\n      </span>\n\n          </ul>\n</div>\n\n\n<div class="sharethis-custom-share-buttons d-block d-sm-none text-right" id="icon-1212754">\n    <span title="Partilhar">\n      <span class="social_buttons d-inline d-print-none mobile-modal-display">\n          <i class="icon-share" aria-hidden="true"></i>\n      </span>\n    <span>\n</div>\n\n<div class="modal-social-mobile d-sm-none" id="mobile-share-1212754">\n    <div class="modal-content-mobile container padding-top-20 padding-bottom-20">\n        <h2 class="margin-bottom-20">Quer partilhar este artigo?</h2>\n        <div class="socia-icons-container-mobile">\n            <ul class="row">\n                <li class="col text-center"><a href="#" class="mobile-fb st_sharethis st-custom-button st-hide-label" data-network="facebook" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>\n                <li class="col text-center"><a href="#" class="mobile-twitter st_sharethis st-custom-button st-hide-label" data-network="twitter" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>\n                <li class="col text-center"><a href="#" class="mobile-whatsapp st_sharethis st-custom-button st-hide-label" data-network="whatsapp" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar"><i class="fab fa-whatsapp"></i></a></li>\n                <li class="col text-center"><a href="#" class="mobile-linkedin st_sharethis st-custom-button st-hide-label" data-network="linkedin" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar"><i class="fab fa-linkedin-in"></i></a></li>\n                <li class="col text-center"><a href="#" class="mobile-more-social st_sharethis st-custom-button st-hide-label" data-network="sharethis" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar"><i class="fas fa-ellipsis-h"></i></a></li>\n            </ul>\n        </div>\n        <div class="text-center cancel-button-mobile padding-top-20">\n            <a href="#" class="">cancelar</a>\n        </div>\n    </div>\n</div>\n\n<script type="text/javascript">\n\n$(document).ready(function(){\n\n    var targetElemente = document.getElementById("mobile-share-1212754");\n\n    $(\'html, body\').css({ overflow:\'initial\', height:\'auto\', position: \'initial\' , width: \'auto\'});\n\n    $(\'#icon-1212754 .mobile-modal-display\').click(function(e){\n        e.preventDefault();\n        $(\'#mobile-share-1212754\').show();\n        $(\'html, body\').css({overflow:\'hidden\'});\n    });\n\n    $(\'#mobile-share-1212754 .cancel-button-mobile a\').click(function(e){\n        e.preventDefault();\n        $(\'#mobile-share-1212754\').hide();\n        $(\'html, body\').css({overflow:\'initial\'});\n    });\n\n    $(\'#mobile-share-1212754 .socia-icons-container-mobile ul li a\').click(function(e){\n        e.preventDefault();\n        $(\'#mobile-share-1212754\').hide();\n        $(\'html, body\').css({overflow:\'initial\'});\n    })\n});\n\n</script>\n        </div>\n      </div>\n    </div>\n    \n  \n    \n        <figure itemprop="image" itemscope itemtype="http://schema.org/ImageObject">\n                <img itemprop="url" alt="" class="img-fluid w-100" sizes="(min-width:1200px) 860px, (min-width:992px) 615px, (min-width:768px) 470px, (min-width:568px) 350px" src="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" src="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" srcset="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=140&amp;q=90&amp;rect=0,39,1500,822&amp;auto=format 140w, https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=350&amp;q=90&amp;rect=0,39,1500,822&amp;auto=format 350w, https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=470&amp;q=90&amp;rect=0,39,1500,822&amp;auto=format 470w, https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=615&amp;q=90&amp;rect=0,39,1500,822&amp;auto=format 615w, https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822&amp;auto=format 860w" >\n        \n                      <figcaption class="descricao-foto mx-3 mx-md-5 px-0" itemprop="description">              <span class="text-lighter-gray">\n                Reuters\r\n                </span>\n              </figcaption>\n          \n          <meta itemprop="url" content="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=140&amp;q=90&amp;rect=0,39,1500,822&amp;auto=format 140w, https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=350&amp;q=90&amp;rect=0,39,1500,822&amp;auto=format 350w, https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=470&amp;q=90&amp;rect=0,39,1500,822&amp;auto=format 470w, https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=615&amp;q=90&amp;rect=0,39,1500,822&amp;auto=format 615w, https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822&amp;auto=format 860w">\n          <meta itemprop="width" content="800">\n          <meta itemprop="height" content="450">\n\n        </figure>\n          \n     <div class="mx-3 mx-md-5 article-text margin-top-30">\n                  <p itemprop="description" class="article-lead">Na segunda-feira à noite, Boris Johnson pediu à população que evitasse o contacto social, entre outras medidas. Uma mudança de planos, até aqui sem a tomada de medidas mais restritivas, que coincide com a divulgação de um estudo que aponta para mais de 250 mil mortes no Reino Unido, caso persistisse a estratégia tomada até agora.\r\n</p>\n             </div>\n\n    <div class="hidden-content relative">\n        <div class="hidden-content-mask text-center">\n            <a class="hidden-content-btn" href="#">VER MAIS</a>\n        </div>\n        <div class="mx-3 mx-md-5 article-text">\n                            <section itemprop="text" class="article-body">\n                    As medidas preconizadas pelo primeiro-ministro Boris Johnson v&atilde;o no sentido da popula&ccedil;&atilde;o evitar qualquer contacto e desloca&ccedil;&atilde;o &ldquo;n&atilde;o essencial&rdquo; e recomendou &agrave;s pessoas idosas que se isolem durante tr&ecirc;s meses. <br />\r\n<br />\r\n<div>\r\nS&atilde;o medidas menos radicais que as adotadas pelos pa&iacute;ses vizinhos, n&atilde;o prevendo o encerramento de escolas, restaurantes ou salas de espet&aacute;culos, nem mesmo a interdi&ccedil;&atilde;o de eventos. S&atilde;o, no entanto, uma mudan&ccedil;a face ao comportamento controverso adotado at&eacute; aqui, dizem os analistas. At&eacute; aqui, a estrat&eacute;gia era de isolar quem apresentava sintomas ou que vinha de zonas de risco para aligeirar a press&atilde;o sobre os servi&ccedil;os e favorecendo a emerg&ecirc;ncia de uma &ldquo;imunidade coletiva&rdquo;.\r\n</div>\r\n<div>\r\n<br />\r\n</div>\r\nDe acordo com a imprensa brit&acirc;nica, a mudan&ccedil;a prende-se em partiular com um relat&oacute;rio do Imperial College of London, apresentado tamb&eacute;m esta segunda-feira.<br />\r\n<br />\r\nOs dados s&atilde;o dram&aacute;ticos. No cen&aacute;rio de nada ser feito, estimava-se que at&eacute; agosto o v&iacute;rus infetasse 81% da popula&ccedil;&atilde;o e provocaria 510.000 mortos. <br />\r\n<br />\r\nCom uma resposta das autoridades em linha do que tinha sido a estrat&eacute;gia at&eacute; segunda-feira pelo Governo, os investigadores estimam que o Reino Unido arriscaria ter at&eacute; 260.000 mortos, fruto de um &ldquo;naufr&aacute;gio&rdquo; do sistema de sa&uacute;de e num cen&aacute;rio de &ldquo;epidemia catastr&oacute;fica&rdquo;.<br />\r\n<br />\r\nCom medidas mais fortes de redu&ccedil;&atilde;o de contactos, semelhantes aos anunciados na segunda-feira, esses n&uacute;meros poderiam ser reduzidos a &ldquo;alguns milhares ou dezenas de milhares&rdquo; o n&uacute;mero de mortos.<br />\r\n<br />\r\nO facto de Fran&ccedil;a ter tamb&eacute;m adotado medidas muito restritivas ter&aacute; pesado ainda na mudan&ccedil;a de atitude, refere o jornal Le Monde.<br />\r\n<br />\r\nO relat&oacute;rio conclui que a &ldquo;supress&atilde;o &eacute; a &uacute;nica estrat&eacute;gia vi&aacute;vel no momento atual&rdquo;.<br />\r\n<br />\r\nDe acordo com o Imperial College, a principal dificuldade da nova estrat&eacute;gia ser&aacute; o tempo em que ter&aacute; de estar implementada, at&eacute; que esteja dispon&iacute;vel uma vacina, o que pode demorar 18 meses.<br />\r\n<br />\r\n<div>\r\nO &uacute;ltimo balan&ccedil;o apontava para 55 mortos no Reino Unido e 1.543 casos. As autoridades reconheceram que o n&uacute;mero de casos real pode ser muito superior. <br />\r\n</div>\r\n<div>\r\n<br />\r\n</div>\r\n<div>\r\nc/ag&ecirc;ncia France Presse<br />\r\n</div>\r\n                </section>\n                    </div>\n\n                    <div itemprop="publisher" itemscope itemtype="https://schema.org/NewsMediaOrganization">\n    <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">\n        <link src="https://cdn-images.rtp.pt/common/img/channels/logos/gray-negative-short/horizontal/rtp.png" />\n        <meta itemprop="url" content="https://cdn-images.rtp.pt/common/img/channels/logos/gray-negative-short/horizontal/rtp.png">\n        <meta itemprop="width" content="1301">\n        <meta itemprop="height" content="651">\n    </div>\n    <meta itemprop="name" content="RTP">\n</div>\n\n<div itemprop="author" itemscope itemtype="https://schema.org/NewsMediaOrganization">\n    <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">\n        <link src="https://cdn-images.rtp.pt/common/img/channels/logos/gray-negative-short/horizontal/rtp.png" />\n        <meta itemprop="url" content="https://cdn-images.rtp.pt/common/img/channels/logos/gray-negative-short/horizontal/rtp.png">\n        <meta itemprop="width" content="1301">\n        <meta itemprop="height" content="651">\n    </div>\n    <meta itemprop="name" content="RTP">\n</div>\n\n<div class="mx-3 mx-md-5 d-print-none padding-bottom-50">\n\n  \n  <div class="row">\n\n    \n      <div class="col-10 col-sm-6 col-lg-7">\n              </div>\n\n          <div class="col-2 col-sm-6 col-lg-5 text-right d-print-none">\n        <div class="sharethis-custom-share-buttons d-none d-sm-block">\n    <ul class="redes-sociais" id="my-inline-buttons-1212754">\n      <span class="st_sharethis st-custom-button st-hide-label" data-network="facebook" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar">\n        <li class="social_buttons d-inline d-print-none">\n            <i class="icon-icone_facebook" aria-hidden="true"></i>\n        </li>\n      </span>\n      <span class="st_sharethis st-custom-button st-hide-label" data-network="twitter" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar">\n        <li class="ml-3 ml-sm-0 social_buttons d-inline d-print-none">\n        <i class="icon-icone_twitter" aria-hidden="true"></i>\n      </li>\n      </span>\n      <span class="st_sharethis st-custom-button st-hide-label" data-network="messenger" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar">\n        <li class="ml-3 ml-sm-0 social_buttons d-inline d-print-none">\n            <i class="icon-icone_messenger"></i>\n        </li>\n      </span>\n      <span class="st_sharethis st-custom-button st-hide-label" data-network="email" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar">\n        <li class="ml-3 ml-sm-0 social_buttons d-inline d-print-none">\n            <i class="icon-icone_email" aria-hidden="true"></i>\n        </li>\n      </span>\n      <span class="st_sharethis st-custom-button st-hide-label" data-network="sharethis" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar">\n        <li class="ml-3 ml-sm-0 social_buttons d-inline d-print-none">\n            <i class="icon-share" aria-hidden="true"></i>\n        </li>\n      </span>\n\n              <li class="barra_vertical d-none d-lg-inline"></li>\n<span class="" title="Imprimir">\n    <li class="social_buttons d-none d-lg-inline ml-3 ml-sm-0">\n        <a href="#imprimir" id="print_me_1212754">\n            <i class="icon-print" aria-hidden="true"></i>\n        </a>\n    </li>\n</span>\n          </ul>\n</div>\n\n\n<div class="sharethis-custom-share-buttons d-block d-sm-none text-right" id="icon-1212754">\n    <span title="Partilhar">\n      <span class="social_buttons d-inline d-print-none mobile-modal-display">\n          <i class="icon-share" aria-hidden="true"></i>\n      </span>\n    <span>\n</div>\n\n<div class="modal-social-mobile d-sm-none" id="mobile-share-1212754">\n    <div class="modal-content-mobile container padding-top-20 padding-bottom-20">\n        <h2 class="margin-bottom-20">Quer partilhar este artigo?</h2>\n        <div class="socia-icons-container-mobile">\n            <ul class="row">\n                <li class="col text-center"><a href="#" class="mobile-fb st_sharethis st-custom-button st-hide-label" data-network="facebook" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>\n                <li class="col text-center"><a href="#" class="mobile-twitter st_sharethis st-custom-button st-hide-label" data-network="twitter" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>\n                <li class="col text-center"><a href="#" class="mobile-whatsapp st_sharethis st-custom-button st-hide-label" data-network="whatsapp" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar"><i class="fab fa-whatsapp"></i></a></li>\n                <li class="col text-center"><a href="#" class="mobile-linkedin st_sharethis st-custom-button st-hide-label" data-network="linkedin" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar"><i class="fab fa-linkedin-in"></i></a></li>\n                <li class="col text-center"><a href="#" class="mobile-more-social st_sharethis st-custom-button st-hide-label" data-network="sharethis" data-image="https://cdn-images.rtp.pt/icm/noticias/images/b2/b2fe24371b0e7162475a3e71b000f0c7?w=860&amp;q=90&amp;rect=0,39,1500,822" data-title="Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas" data-url="https://www.rtp.pt/noticias/mundo/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_n1212754" title="Partilhar"><i class="fas fa-ellipsis-h"></i></a></li>\n            </ul>\n        </div>\n        <div class="text-center cancel-button-mobile padding-top-20">\n            <a href="#" class="">cancelar</a>\n        </div>\n    </div>\n</div>\n\n<script type="text/javascript">\n\n$(document).ready(function(){\n\n    var targetElemente = document.getElementById("mobile-share-1212754");\n\n    $(\'html, body\').css({ overflow:\'initial\', height:\'auto\', position: \'initial\' , width: \'auto\'});\n\n    $(\'#icon-1212754 .mobile-modal-display\').click(function(e){\n        e.preventDefault();\n        $(\'#mobile-share-1212754\').show();\n        $(\'html, body\').css({overflow:\'hidden\'});\n    });\n\n    $(\'#mobile-share-1212754 .cancel-button-mobile a\').click(function(e){\n        e.preventDefault();\n        $(\'#mobile-share-1212754\').hide();\n        $(\'html, body\').css({overflow:\'initial\'});\n    });\n\n    $(\'#mobile-share-1212754 .socia-icons-container-mobile ul li a\').click(function(e){\n        e.preventDefault();\n        $(\'#mobile-share-1212754\').hide();\n        $(\'html, body\').css({overflow:\'initial\'});\n    })\n});\n\n</script>\n      </div>\n    \n  </div>\n\n  \n</div>\n\n</div>\n        \n    </div>\n\n                  <div class="pub-frame leaderboard-pub-advert d-none">\n    <section>\n      <span >pub </span>\n      <div id="separador_noticias_1_39657" class="text-center separador_noticias_1-container-ads relative"></div>\n    </section>\n</div>\n          \n</article>\n              </div>\n\n              <div class="sidebar_articles col-12 col-lg-4 relative bg-color d-print-none d-none d-sm-none d-lg-block ">\n  <section class="sticky-top rightCol">\n    <div class="modulo pt-0 bg-color">\n\n      <div class="tab-content" id="articles_playlist">\n\n        <div class="mx-auto pub_color" class="playlist-anchor" data-playlist-anchor-position="2">\n          <div class="col-md-12 col-sm-12 col-12 padding-bottom-30 padding-top-20 mx-auto mrec-pub-advert pub-frame d-none margin-bottom-30">\n    <section>\n        <span>PUB</span>\n      <div id="mrec_noticias_infinito_38332" class="text-center mrec_noticias_infinito-container-ads relative"></div>\n    </section>\n</div>\n        </div>\n\n      </div>\n\n      <div id="articles_playlist_item_template" style="display:none">\n        <article role="article">\n\n  <a href="" title="" data-article-field="title">\n    <div class="row m-0">\n\n      <div class="col-5 pl-0 pr-3 relative">\n                      <figure>\n              <img class="img-fluid" sizes="(min-width:568px) 140w" srcset="https://cdn-images.rtp.pt/noticias/images/default_noticias.png?w=860&amp;q=90" data-article-field="image">\n              <figcaption><i class="far fa-check"></i></figcaption>\n            </figure>\n                </div>\n\n      <div class="col px-0">\n        <h6 data-article-field="headline-title">\n                  </h6>\n      </div>\n\n    </div>\n  </a>\n</article>\n      </div>\n\n    </div>\n  </section>\n</div>\n      \n    </div>\n      \n              <div class="container-fluid-override d-print-none">\n\n\n<footer role="contentinfo" itemscope itemtype="http://schema.org/WPFooter" class="bg-footer text-white">\n  <div class="container px-0">\n    <div class="row padding-bottom-30 col-12 col-md-11 col-lg-12 mx-auto">\n\n      <div class="col-12 col-sm-12 col-md-11 col-lg-3 d-inline-grid px-0">\n        <div class="logo-footer">\n          <img src="//cdn-images.rtp.pt/common/img/channels/logos/gray-negative/horizontal/rtp-footer.png" alt="RTP">\n          <span class="h5 medium-weight text-white text-uppercase align-middle"> Notícias</span>\n        </div>\n\n        <div class="col-12 align-self-end follow-us d-none d-lg-block px-0">\n          <div class="h7 medium-weight text-white text-uppercase margin-bottom-15">Siga-nos</div>\n          <ul itemscope itemtype="http://schema.org/SiteNavigationElement" class="d-inline-flex">\n            <li class="text-center rounded_circle"><a class="footer-facebook" itemprop="url" href="https://www.facebook.com/rtp" title="facebook"><i class="fab fa-facebook-f"></i></a></li>\n            <li class="text-center rounded_circle"><a class="footer-twitter" itemprop="url" href="https://twitter.com/rtppt" title="twitter"><i class="fab fa-twitter"></i></a></li>\n            <li class="text-center rounded_circle"><a class="footer-instagram" itemprop="url" href="https://www.instagram.com/rtppt/" title="instagram"><i class="fab fa-instagram"></i></a></li>\n            <li class="text-center rounded_circle"><a class="footer-youtube" itemprop="url" href="https://www.youtube.com/user/rtp" title="youtube"><i class="fab fa-youtube"></i></a></li>\n            <li class="text-center rounded_circle"><a class="footer-flickr" itemprop="url" href="https://www.flickr.com/photos/rtppt" title="flickr"><i class="fab fa-flickr"></i></a></li>\n          </ul>\n        </div>\n      </div>\n\n      <div class="col-12 col-sm-3 col-lg-2 areas px-0">\n        <ul itemscope itemtype="http://schema.org/SiteNavigationElement" >\n          <li><h4 class="footer light-medium-weight text-white margin-bottom-8">Áreas</h4></li>\n          <li><a itemprop="url" class="h7 text-white text-uppercase medium-weight" href="https://www.rtp.pt/noticias/desporto" title="desporto">Desporto</a></li>\n          <li><a itemprop="url" class="h7 text-white text-uppercase medium-weight" href="https://www.rtp.pt/noticias/pais" title="País">País</a></li>\n          <li><a itemprop="url" class="h7 text-white text-uppercase medium-weight" href="https://www.rtp.pt/noticias/mundo" title="Mundo">Mundo</a></li>\n          <li><a itemprop="url" class="h7 text-white text-uppercase medium-weight" href="https://www.rtp.pt/noticias/politica" title="Política">Política</a></li>\n          <li><a itemprop="url" class="h7 text-white text-uppercase medium-weight" href="https://www.rtp.pt/noticias/economia" title="Economia">Economia</a></li>\n          <li><a itemprop="url" class="h7 text-white text-uppercase medium-weight" href="https://www.rtp.pt/noticias/cultura" title="Cultura">Cultura</a></li>\n        </ul>\n      </div>\n\n      <div class="col-12 col-sm-4 col-lg-3 footer-newsletter px-0">\n        <ul>\n          <h4 class="footer light-medium-weight text-white margin-bottom-10 ">Newsletter <strong class="medium-weight">RTP</strong></h4>\n          <li>\n            <h6 class="lead text-white light-medium-weight margin-bottom-8">Toda a informação no seu email</h6>\n          </li>\n          <li class="margin-bottom-8 flex-newsletter">\n            <a itemprop="url" href="//www.rtp.pt/newsletter/">\n              <i class="icon-icone_email"></i>\n              <span class="h7 text-white medium-weight">O Essencial da manhã</span>\n            </a>\n          </li>\n          <li class="flex-newsletter">\n            <a href="//www.rtp.pt/newsletter/">\n              <i class="icon-icone_email"></i>\n              <span class="h7 text-white medium-weight">O Essencial</span>\n            </a>\n          </li>\n        </ul>\n      </div>\n\n      <div class="col-12 col-sm-5 col-lg-4 footer-app px-0">\n        <ul>\n          <li>\n            <a href="//www.rtp.pt/newsletter/"><h4 class="footer light-medium-weight text-white margin-bottom-20">Instale a aplicação <br><strong class="medium-weight">RTP Notícias</strong></h4></a>\n          </li>\n          <li>\n            <a href="//www.rtp.pt/newsletter/"><h6 class="lead text-white light-medium-weight margin-bottom-8">Disponível gratuitamente para IOS e Android</h6></a>\n          </li>\n        </ul>\n        <div class="app-buttons">\n          <ul>\n            <li class="d-block d-sm-inline-block">\n              <a itemprop="url" title="Aplicação RTP Notícias para dispositivos IOS" href="//itunes.apple.com/pt/app/rtp/id449177845" class="">\n                <img height="50" src="//cdn-images.rtp.pt/noticias/images/AppleStore.png" alt="Apple Store">\n              </a>\n            </li>\n            <li class="d-block d-sm-inline-block">\n              <a itemprop="url" title="Aplicação RTP Notícias para dispositivos Android" href="//play.google.com/store/apps/details?id=pt.rtp.noticias.android" class="">\n                <img height="50" src="//cdn-images.rtp.pt/noticias/images/GooglePlay.png" alt="Google Play">\n              </a>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </div>\n\n    <div class="col-12 col-md-11 col-lg-12 mx-auto follow-us d-md-block d-lg-none px-0">\n      <div class="mx-3 mx-lg-0">\n        <h4 class="h7 medium-weight text-white text-uppercase margin-bottom-15">Siga-nos</h4>\n        <ul class="d-inline-flex">\n          <li class="text-center rounded_circle"><a class="footer-facebook" itemprop="url" href="https://www.facebook.com/rtp" title="facebook"><i class="fab fa-facebook-f"></i></a></li>\n          <li class="text-center rounded_circle"><a class="footer-twitter" itemprop="url" href="https://twitter.com/rtppt" title="twitter"><i class="fab fa-twitter"></i></a></li>\n          <li class="text-center rounded_circle"><a class="footer-instagram" itemprop="url" href="https://www.instagram.com/rtppt/" title="instagram"><i class="fab fa-instagram"></i></a></li>\n          <li class="text-center rounded_circle"><a class="footer-youtube" itemprop="url" href="https://www.youtube.com/user/rtp" title="youtube"><i class="fab fa-youtube"></i></a></li>\n          <li class="text-center rounded_circle"><a class="footer-flickr" itemprop="url" href="https://www.flickr.com/photos/rtppt" title="flickr"><i class="fab fa-flickr"></i></a></li>\n        </ul>\n      </div>\n    </div>\n\n    <div class="row col-12 col-md-11 col-lg-12 mx-auto padding-top-30">\n      <div class="col-12 col-sm-7 col-lg-5 offset-lg-3 mb-3 mb-lg-0 text-footer px-0 h8 my-auto privacy-block">\n        <a itemprop="url" class="pr-sm-2 text-footer text-uppercase" title="Política de privacidade" href="http://media.rtp.pt/rgpd/politica-de-privacidade/">Política de privacidade</a><span class="d-none d-sm-inline">|</span>\n        <a itemprop="url" class="px-sm-2 text-footer text-uppercase" title="Termos e condições" href="http://media.rtp.pt/rgpd/termos-e-condicoes/">Termos e condições</a><span class="d-none d-sm-inline">|</span>\n        <a itemprop="url" class="pl-sm-2 text-footer text-uppercase" title="Anunciar" href="http://publicidade.rtp.pt/">Publicidade</a>\n    </div>\n\n      <div class="col-12 col-sm-5 col-lg-4 text-footer px-0 h7 copy-block">© RTP,<span itemprop="copyrightHolder" itemscope itemtype="http://schema.org/Organization">\n          <span itemprop="name"> Rádio e Televisão de Portugal</span>\n        </span>\n        <span itemprop="copyrightYear">2020</span>\n      </div>\n    </div>\n\n  </footer>\n\n</div>\n      \n    </div>\n\n  </div>\n\n      <script src="https://www.rtp.pt/noticias/js/vendor/fontawesome/all.min.js"></script>\n\n  \n  \n   <script src="https://www.rtp.pt/noticias/js/vendor/bootstrap-4-1-3/bootstrap.min.js"></script>\n\n\n\n  <script src="https://www.rtp.pt/noticias/js/vendor/imgix/imgix.js"></script>\n\n\n\n\n\n  \n  <script type="application/ld+json">\n  {\n    "@context": "https://schema.org",\n    "@type": "NewsMediaOrganization",\n    "name": "RTP",\n    "alternateName": "RTP Notícias",\n    "url": "https://www.rtp.pt/noticias/",\n    "logo": "https://cdn-images.rtp.pt/common/img/channels/logos/gray-negative-short/horizontal/rtp.png?w=120&q=100&fm=png32",\n    "sameAs": [\n      "https://www.facebook.com/rtpnoticias/",\n      "https://twitter.com/RTPNoticias",\n      "https://www.rtp.pt/noticias/"\n    ]\n  }\n  </script>\n\n  \n  <script src="https://www.rtp.pt/noticias/js/rtp/floatingPlayer.js"></script>\n\n\n\n  <script src="https://www.rtp.pt/noticias/js/vendor/timeago/jquery.timeago.js"></script>\n  \n  <script src="https://www.rtp.pt/noticias/js/vendor/timeago/jquery.timeago.pt.js"></script>\n  \n  <script src="https://www.rtp.pt/noticias/js/rtp/humanDate.js"></script>\n  <script>\n  // Timeago Plugin - apply Human Date\n  jQuery(document).ready(function() {\n    jQuery("time.timeago").humanDate();\n  });\n  </script>\n\n\n\n\n            <script>\n        var CHARTBEAT_rtp_sections = \'RTP Noticias\';\n      </script>\n      <script src="//www-test.rtp.pt/common/js/analytics.js?v=20191023-1130"></script>\n  \n\n\n    <script src="//www-test.rtp.pt/common/js/dfp.js?v=20191023-1130"></script>\n  \n\n<script src="https://www.rtp.pt/noticias/js/vendor/oneSignal/oneSignal.js?v=201905"></script>\n<script>\n  oneSignalLib.init();\n  oneSignalLib.src(\'https://www.rtp.pt/noticias/js/rtp/OneSignal.js\');\n  oneSignalLib.run(1);\n</script>\n\n\n<script src="https://www.rtp.pt/noticias/js/vendor/shareThis/shareThis.js?v=201905"></script>\n<script>\n  shareThisLib.init();\n  shareThisLib.run(1);\n</script>\n\n\n            <script>var GEMIUS_rtp_area=\'noticias/mundo/artigos/covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_1212754\';</script><script>if ( RTPRequireScript( RTPRequireScriptBucketLevel.gemius ).hasBucket() ) {\n  <!--//--><![CDATA[//><!--\n  var pp_gemius_identifier = \'px0wQn_3LwvnSI68k48WIsPc7zEyghtsAdS20LBvELT.W7\';\n  var pp_gemius_extraparameters = new Array(\'gA=\'+GEMIUS_rtp_area);\n\n  // lines below shouldn\'t be edited\n  function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+\'_pdata\'] = window[i+\'_pdata\'] || []; x[x.length]=arguments;};}; gemius_pending(\'gemius_hit\'); gemius_pending(\'gemius_event\'); gemius_pending(\'pp_gemius_hit\'); gemius_pending(\'pp_gemius_event\');\n  (function(d,t) {var ex; try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l=\'http\'+((location.protocol==\'https:\')?\'s\':\'\'); gt.async=\'true\'; gt.src=l+\'://gapt.hit.gemius.pl/xgemius.js\'; s.parentNode.insertBefore(gt,s);} catch (ex) {}})(document,\'script\');\n  //--><!]]>\n}\n</script>\n  \n\n\n\n\n  <script src="https://www.rtp.pt/noticias/js/vendor/OwlCarousel2/dist/owl.carousel.min.js"></script>\n\n\n  <script src="https://www.rtp.pt/noticias/js/vendor/printThis/printThis.js"></script>\n\n\n  \n  \n\n\n    \n      \n  <script src="https://www.rtp.pt/noticias/js/rtp/slideDownRtpNavBar.js"></script>\n\n  \n  <script src="https://www.rtp.pt/noticias/js/rtp/behaviorRtpNavBar.js"></script>\n\n\n  \n  \n  <script>\n  $(document).ready(function(){\xa0\n          vid="1212754";\n      cmsid="2495048";\n      area="mundo";\n      meio="digital";\n      genero="informacao";\n      site="rtp-noticias";\n      site-area="["","noticias","mundo","artigos","covid-19-a-mudanca-de-estrategia-do-reino-unido-influenciada-por-previsoes-alarmistas_1212754"]";\n      titulo = "Covid-19. A mudança de estratégia do Reino Unido influenciada por previsões alarmistas";\n      news_id="1212754";\n      });\n</script>\n  <script src="https://www.rtp.pt/noticias/js/vendor/jquery-waypoints/lib/jquery.waypoints.min.js"></script>\n  <script src="https://secure.widget.cloud.opta.net/v3/v3.opta-widgets.js"></script>\n  <script type=\'text/javascript\'>\n    // Vars: baseUrl\n//       teamsJson\n\nvar opta_settings = {\n  subscription_id: \'1e7a5865f9f8f641a3ac1e2ced361486\',\n  language: \'pt_PT\',\n  timezone: \'Europe/London\',\n  link_callback: function(params){\n    var link = \'https://www.rtp.pt/noticias/\';\n    var baseLink="desporto/";\n          if(params.player){\n        link += "/"+params.player;\n      }  \n    return link;\n  }\n};\n  </script>\n  <script src="https://www.rtp.pt/noticias/js/rtp/articlePlaylist.js"></script>\n  <script type=\'text/javascript\'>\n    // Vars: playlistUrl\n//       playlistPaged\n//       keepOriginalUrl (optional)\n\n  $(function() {\n    $(\'#articles_playlist\').articlePlaylist({\n      loader: $(`<div class="text-center">\n      <div class="circle-loading">\n\n</div>\n      </div>`),\n      playlistUrl: \'https://www.rtp.pt/noticias/rc/playlist/homepage_highlights/article/1212754\',\n      paged: false,\n            playlistItemTemplate: $(\'#articles_playlist_item_template\'),\n      canvasItemsContainer: $(\'#articles-container\'),\n      canvasItemInViewCallback: function (item) {\n\n\n        // do stuff when a item gets in view ( analytics, etc )\n        // Adicionar HIT ao gemius\n\n/*\n\n        pp_gemius_extraparameters[0] = ($(item[0]).attr(\'data-playlist-item-gemius\')) ? \'nada\' : $(item[0]).attr(\'data-playlist-item-gemius\');\n\n        pp_gemius_extraparameters[0] = ($(item[0]).attr(\'data-playlist-item-url\')) ? \'nada\' : $(item[0]).attr(\'data-playlist-item-url\');\n*/\n      //console.log ($(item[0]));\n        //pp_gemius_hit (pp_gemius_identifier, "aa"+pp_gemius_extraparameters[0]);\n        //console.log(itemId)\n\n\n\n\n      },\n      canvasItemBeforeLoadCallback: function (item) {\n                 $(\'.st-custom-button\').removeClass("st-custom-button");\n              },\n      canvasItemAfterLoadCallback: function (item) {\n        // do stuff when a item gets loaded from ajax\n\n        // Print article\n        $(\'#print_me_\'+itemId).click(function(){\n          $(\'#article_content_\'+itemId).printThis();\n        });\n\n        // View more button\n        maxHeightToHide = 250;\n\n        setTimeout(function () {\n            if ($(item).find(\'.hidden-content\').size() > 0 && $(item).find(\'.hidden-content\')[0].scrollHeight <= maxHeightToHide ) {\n                $(item).find(\'.hidden-content\').css(\'max-height\' , \'90000px\');\n                $(item).find(\'.hidden-content-mask\').hide();\n            }\n        }, 500);\n\n        $(item).find(\'.hidden-content .hidden-content-btn\').click(function(e){\n            e.preventDefault();\n            $(e.target).parent().parent().css(\'max-height\' , \'90000px\');\n            $(e.target).parent().hide();\n        });\n\n        $(item).find("time.timeago").humanDate();\n\n                  if (__sharethis__ && __sharethis__.config) {\n             __sharethis__.init(__sharethis__.config);\n          }\n        \n\tif (typeof RTPPub != "undefined") {\n          // Refresh right bar pub\n          if ($(".mrec_noticias_infinito-container-ads")[0]){\n            RTPPub.adRefreshSlot($(".mrec_noticias_infinito-container-ads")[0].id);\n          }\n\n          // Add pub between articles\n          ad_slot = "separador_noticias_2";\n          if ($(\'#articles-container\').data(\'last_inter_article_pub\') == \'separador_noticias_2\') {\n            ad_slot = "separador_noticias_1";\n          }\n          pub_div_id = ad_slot + "_" + item.attr(\'id\');\n          $(item).css(\'padding-bottom\', \'0px\');\n          item.append(\'<div class="pub-frame leaderboard-pub-advert d-none"><section><span>PUB</span><div id="\' + pub_div_id + \'" class="text-center \'+ad_slot+\'-container-ads relative"></div></section></div>\');\n          RTPPub.adCreateSlot(pub_div_id, ad_slot);\n          $(\'#articles-container\').data(\'last_inter_article_pub\', ad_slot);\n        }\n      },\n      remoteUrlForItem: function (itemId) {\n        return \'https://www.rtp.pt/noticias/article/content\' + \'/\' + itemId;\n      },\n      fillTemplate: function (template, data) {\n        template.find(\'*[data-article-field="headline-title"]\').html(data[\'title\']);\n        template.find(\'*[data-article-field="title"]\').attr(\'href\', data[\'url\']);\n        if ( data[\'author\'] ) {\n          template.find(\'*[data-article-field="author"]\').html(data[\'author\']);\n        }\n        if ( data[\'image\'] ) {\n          template.find(\'*[data-article-field="image"]\').attr(\'srcset\', data[\'imageSourceSet\']);\n        }\n      }\n    });\n  });\n  </script>\n  \n</body>\n</html>\n'}
+[2020-03-17 21:30:00,831]: scrapy.core.engine - INFO - Closing spider (finished)
+[2020-03-17 21:30:00,839]: scrapy.statscollectors - INFO - Dumping Scrapy stats:
+{'downloader/request_bytes': 318,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 13867,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.559594,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 3, 18, 0, 30, 0, 839799),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 3, 18, 0, 29, 59, 280205)}
+[2020-03-17 21:30:00,839]: scrapy.core.engine - INFO - Spider closed (finished)
+[2020-03-17 21:30:00,955]: scrapy.utils.log - INFO - Scrapy 1.7.3 started (bot: scrapybot)
+[2020-03-17 21:30:00,955]: scrapy.utils.log - INFO - Versions: lxml 4.4.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 19.7.0, Python 3.7.2 (tags/v3.7.2:9a3ffc0492, Dec 23 2018, 22:20:52) [MSC v.1916 32 bit (Intel)], pyOpenSSL 19.0.0 (OpenSSL 1.1.1c  28 May 2019), cryptography 2.7, Platform Windows-10-10.0.18362-SP0
+[2020-03-17 21:30:00,971]: scrapy.crawler - INFO - Overridden settings: {}
+[2020-03-17 21:30:00,979]: scrapy.extensions.telnet - INFO - Telnet Password: e96202f91aca9426
+[2020-03-17 21:30:00,987]: scrapy.middleware - INFO - Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+[2020-03-17 21:30:00,991]: scrapy.middleware - INFO - Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[2020-03-17 21:30:00,999]: scrapy.middleware - INFO - Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2020-03-17 21:30:00,999]: scrapy.middleware - INFO - Enabled item pipelines:
+[]
+[2020-03-17 21:30:01,003]: scrapy.core.engine - INFO - Spider opened
+[2020-03-17 21:30:01,003]: scrapy.extensions.logstats - INFO - Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2020-03-17 21:30:01,007]: scrapy.extensions.telnet - INFO - Telnet console listening on 127.0.0.1:6023
