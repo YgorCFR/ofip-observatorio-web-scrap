@@ -3,11 +3,13 @@ import sys
 sys.path.append('..')
 #Using SQLAlchemy Object Relational Mapper (ORM)
 import sqlalchemy as db
+from sqlalchemy.orm import sessionmaker
 #Using mysql.connector to connect
 import mysql.connector
 #Plugging with mysql database
-engine = db.create_engine('mysql+mysqlconnector://root:****@localhost:3306/ofip')
+engine = db.create_engine('******')
 connection = engine.connect()
+
 
 #Defining tables and their metadata from database
 metadata = db.MetaData()
@@ -18,4 +20,7 @@ noticia = db.Table('noticia', metadata, autoload=True, autoload_with=engine)
 palavra_chave = db.Table('palavra_chave', metadata, autoload=True, autoload_with=engine)
 projeto = db.Table('projeto', metadata, autoload=True, autoload_with=engine)
 
-
+#defining session
+Session = sessionmaker(bind=engine)
+session = Session()
+session._model_changes = {}
