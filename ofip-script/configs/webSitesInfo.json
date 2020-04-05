@@ -175,7 +175,7 @@
             "tag1" : "div",
             "attrs_?" : {
                 "att" : "class",
-                "att_value" : "text has-image"
+                "att_value" : "text"
             },
             "text_to_replace": [
                 {
@@ -186,7 +186,7 @@
             ]
         },
         {
-            "name" : "noticias.r7.com/",
+            "name" : "noticias.r7.com",
             "tag1" : "article",
             "attrs_?" : {
                 "att" : "class",
@@ -315,7 +315,7 @@
             }]
         },
         {
-            "name" : "www.dw.com/",
+            "name" : "www.dw.com",
             "tag1" : "div",
             "attrs_?" : {
                 "att" : "class",
@@ -367,7 +367,7 @@
             }]
         },
         {
-            "name" : "www.rfi.fr/br/",
+            "name" : "www.rfi.fr",
             "tag1" : "p",
             "attrs_?" : {
                 "att" : null,
@@ -406,7 +406,7 @@
             }]
         },
         {
-            "name" : "valor.globo.com/",
+            "name" : "valor.globo.com",
             "tag1" : "p",
             "attrs_?" : {
                 "att" : "class",
@@ -419,7 +419,7 @@
             }]
         },
         {
-            "name" : "brasil.elpais.com/",
+            "name" : "brasil.elpais.com",
             "tag1" : "p",
             "attrs_?" : {
                 "att" : "class",
@@ -432,7 +432,7 @@
             }]
         },
         {
-            "name" : "agenciabrasil.ebc.com.br/",
+            "name" : "agenciabrasil.ebc.com.br",
             "tag1" : "p",
             "attrs_?" : {
                 "att" : "class",
@@ -471,7 +471,7 @@
             }]
         },
         {
-            "name" : "www.abin.gov.br/",
+            "name" : "www.abin.gov.br",
             "tag1" : "p",
             "attrs_?" : {
                 "att" : null,
@@ -497,7 +497,7 @@
             }]
         },
         {
-            "name" : "www.usp.br/",
+            "name" : "www.usp.br",
             "tag1" : "div",
             "attrs_?" : {
                 "att" : "id",
@@ -523,7 +523,7 @@
             }]
         },
         {
-            "name" : "thediplomat.com/",
+            "name" : "thediplomat.com",
             "tag1" : "section",
             "attrs_?" : {
                 "att" : "class",
@@ -549,7 +549,7 @@
             }]
         },
         {
-            "name" : "www.poder360.com.br/",
+            "name" : "www.poder360.com.br",
             "tag1" : "p",
             "attrs_?" : {
                 "att" : null,
