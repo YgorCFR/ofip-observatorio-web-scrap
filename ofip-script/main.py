@@ -37,17 +37,17 @@ def main():
     f.save(_.fonte ,f.combine_three_lists(get_list_of_df_url, get_list_of_df_sites_id, get_list_of_df_keywords_id))    
 
     #get list of news processed.
-    list_of_news = s.scrap(processed_data)
-    
-    #appending the news to the dataframe
-    processed_data = f.append_the_news_to_dataframe(processed_data, list_of_news)
-    
+    processed_data = s.scrap(processed_data)
+
     #retrieving url's ids.
     urls_id = f.id_per_value(list(processed_data['Url']), _.fonte.columns.id, _.fonte.columns.fonte)
     processed_data['Url_ID'] = urls_id
-    print(processed_data.columns)
-
     
+    #avoid ambiguity in news table
+    processed_data = f.check_if_register_exists(_.noticia, processed_data, 'Url_ID', _.noticia.columns.texto, _.noticia.columns.fonte)
+    
+    #saving news
+    f.save(_.noticia, f.combine_multiple_lists(processed_data['Title'].tolist(), processed_data['News'].tolist(), processed_data['Url_ID'].tolist(), processed_data['DatePublish'].tolist()))
 
 if __name__ == "__main__":
     main()
