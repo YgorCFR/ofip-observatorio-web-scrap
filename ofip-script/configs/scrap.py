@@ -29,6 +29,7 @@ class MySpider(scrapy.Spider):
         dic = {}
         #Extracting the content using css selectors
         dic["response"] = response.text
+        dic["url"] = response.request.url
         yield dic
 
 def spider_results():
@@ -53,7 +54,11 @@ def prepare_scrap_configuration():
     op.add_argument('headless')
     op.add_argument('log-level=3')
     driver = webdriver.Chrome("chromedriver.exe", options=op)
-    
+
+
+def sort_scrap_array(array_of_values, index=None,key_value=None):
+    if key_value != None:
+        return array_of_values[index][key_value]
 
 # # url = 'https://www.sulbahianews.com.br/abertas-as-inscricoes-para-selecao-de-projetos-de-pesquisa-contra-a-tuberculose/'
 # # with open("webSitesInfo.json") as file:
@@ -91,6 +96,7 @@ def scrap(df):
                 att_value = searched_site['attrs_?']['att_value']
                 text_to_replace = searched_site['text_to_replace']
                 site_name = searched_site['name']
+                searched_site['url'] = item[0]
                 MySpider.allowed_domains.append(site_name)
                 MySpider.start_urls.append(item[0])
                 # result = run_scrap_script(searched_site, item[0])
@@ -100,11 +106,12 @@ def scrap(df):
             else:
                 news_data.append([item[0], 'S/D', searched_site])
             index += index
-        result = run_scrap_script(news_data)                
-        print(result)
-        exit(1)
-        return news_data
-def run_scrap_script(data_info):
+        df["News"] = pd.Series([new[2] for new in news_data])
+        df = run_scrap_script(news_data, df)
+        df = df.dropna()  
+        df = df.reset_index(drop=True)              
+        return df
+def run_scrap_script(data_info, df):
     try:
         # op = webdriver.ChromeOptions()
         # op.add_argument('headless')
@@ -118,16 +125,19 @@ def run_scrap_script(data_info):
         # print(MySpider.start_urls)
         # print("\n\n")
         data = [i[2] for i in data_info if i[1] == 'C/D']
+        data = sorted(data, key=lambda k: k['url']) 
         scrap_exit = []
         res = spider_results()
+        res = sorted(res, key=lambda k: k['url']) 
         index = 0
         for result in res:
+            url = str(result["url"])
             content = str(result["response"])
             soup = BeautifulSoup(content, features='lxml')
             conteudo_do_site = []
             texto = ''
             if data[index]['attrs_?']['att_value'] != None:
-                conteudo_do_site = soup.findAll(data[index]['tag1'], attrs={ data[index]['attrs_?']['att'] : data[index]['attrs_?']['att_value']})
+                conteudo_do_site = soup.findAll(data[index]['tag1'], { data[index]['attrs_?']['att'] : data[index]['attrs_?']['att_value']})
             else:
                 conteudo_do_site = soup.findAll(data[index]['tag1'])
             for conteudo in conteudo_do_site:
@@ -150,8 +160,11 @@ def run_scrap_script(data_info):
                 if text_item['replace_type'] == 3:
                     if texto_bs_refinado.__contains__(text_item['end']):
                         texto_bs_refinado = texto_bs_refinado.replace(texto_bs_refinado[:texto_bs_refinado.index(text_item['end'])],"")
-            scrap_exit.append(texto_bs_refinado)
-        return scrap_exit
+            scrap_exit.append([texto_bs_refinado, url])
+            index = index +  1
+        for exits in scrap_exit:
+            df.loc[df.Url == exits[1], 'News'] = exits[0]
+        return df
     except Exception as ex:
         raise ex
 
