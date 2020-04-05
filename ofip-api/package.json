@@ -1,0 +1,32 @@
+{
+  "name": "ofip-api",
+  "version": "1.0.0",
+  "description": "Api for OFIP general project, consuming ofip-script and sending information to ofip-views",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YgorCFR/ofip-observatorio-web-scrap.git"
+  },
+  "author": "Ygor Carlos Ferreira Rolim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YgorCFR/ofip-observatorio-web-scrap/issues"
+  },
+  "homepage": "https://github.com/YgorCFR/ofip-observatorio-web-scrap#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "gitignore": "^0.6.0",
+    "http": "0.0.1-security",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.15",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.6",
+    "sequelize-values": "^1.1.0"
+  }
+}
