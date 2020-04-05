@@ -3,6 +3,7 @@ from configs import db as _
 from configs import logs as log
 from configs import api
 import json
+import dateutil.parser
 import pandas as pd
 import time
 from datetime import datetime, timedelta
@@ -18,7 +19,7 @@ def id_per_value(values, key, column):
     id_of_values = []
     for value in values:
         r = list_desired_values(_.db.select([key]).where(column == value))
-        id_of_values.append(r[0])
+        id_of_values.append(int(r[0]))
     
     id_of_values = [int(i) for i in id_of_values]
     sites_id = pd.DataFrame({'Site_ID': id_of_values})
@@ -50,6 +51,20 @@ def combine_three_lists(arg1, arg2, arg3):
     for item in range(len(arg1)):
         combined.append([arg1[item], arg2[item], arg3[item]])
     return combined
+
+def combine_multiple_lists(*argv):
+    return [list(x) for x in zip(*argv)]
+
+
+def check_if_register_exists(table, df, key, search_column, filter_column):
+    column_of_content = df[key]
+    remove_from_save_queue = []
+    list_of_column_of_content = [item for item in column_of_content.tolist()]
+    for item in list_of_column_of_content:
+        if _.session.query(search_column).filter(filter_column == item).first() is not None:
+            remove_from_save_queue.append(item)
+    df = df[df[key].isin(remove_from_save_queue) == False]
+    return df
 
 def save(table, content):
     data = []
@@ -100,9 +115,14 @@ def proccess_keyword(keyword_analysed):
 def proccess_date(date_analysed):
     try:
         date_analysed = date_analysed['pagemap']['metatags'][0]['article:published_time']
-        return date_analysed
+        date = dateutil.parser.parse(date_analysed)
+        date = date.strftime("%Y-%m-%d %H:%M:%S")
+        return date
     except:
-        return (datetime.today() - timedelta(days=int(api.daysBefore[1:]))).strftime("%Y-%m-%d %H:%M:%S")
+        date_analysed =  (datetime.today() - timedelta(days=int(api.daysBefore[1:]))).strftime("%Y-%m-%d %H:%M:%S")
+        date = dateutil.parser.parse(date_analysed)
+        date = date.strftime("%Y-%m-%d %H:%M:%S")
+        return date
 
 def process_api_data(indexes=None,description=None, datePublish=None, title=None, url=None, source=None, keyword_id=None, data=None, columns=[]):
     #Defining empty DataFrame
@@ -165,6 +185,7 @@ def analysing_df_second_treatment(df):
         dfSource = dfSource.reset_index(drop=True)
         df = dfSource
         del df['Pos-Url']
+        print(df['Url'])
         return df
 
 def wipe_duplicate_rows(df, subset):
