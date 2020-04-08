@@ -4,7 +4,8 @@
   "description": "Api for OFIP general project, consuming ofip-script and sending information to ofip-views",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
