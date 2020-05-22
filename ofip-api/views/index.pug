@@ -1,0 +1,33 @@
+html
+  head
+    title= title
+    link(rel="icon", content="/assets/icon/favicon.ico", type="image/x-icon")
+    link(rel="stylesheet" href="/assets/css/bootstrap.min.css")
+    link(rel="stylesheet" href="/assets/css/default.css")
+    link(href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css")
+    script(type='text/javascript' src="/assets/js/main.js")
+    script(type='text/javascript' src="/assets/js/jquery-3.5.1.slim.min.js")
+    script(type='text/javascript' src="/assets/js/popper.min.js")
+    script(type='text/javascript' src="/assets/js/bootstrap.min.js")
+  body
+    div.container.card.mt-5.p-4.col-md-4.justify-content-center
+        form(name="form" id="form" action='/api/v1/auth/change-password', method="post", onsubmit="return validateForm()")
+            h2.text-center= message
+            div.form-group(data-role='fieldcontain')
+                fieldset(data-role='controlgroup')
+                    label(for='password') Senha:
+                    input(id='password', type='password', name='password', placeholder='digite sua nova senha...').form-control
+            div.form-group(data-role='fieldcontain')
+                fieldset(data-role='controlgroup')
+                    label(for='password_') Senha redigitada:
+                    input(id='password_', type='password', name='password_', placeholder='redigite sua nova senha...').form-control 
+            div.form-group(data-role='fieldcontain')
+                fieldset(data-role='controlgroup')
+                    input(id='hash', type='password', name='hash', style='display:none;')
+            div.form-group(data-role='fieldcontain')
+                fieldset(data-role='controlgroup')
+                    input(id='id', type='password', name='id', style='display:none;')
+            div.form-group(data-role='fieldcontain')
+                fieldset(data-role='controlgroup')
+                    input(type="submit", value="Submeter").btn.btn-success.btn-block

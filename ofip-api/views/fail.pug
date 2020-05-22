@@ -1,0 +1,15 @@
+html
+  head
+    title= title
+    link(rel="icon", content="/assets/icon/favicon.ico", type="image/x-icon")
+    link(rel="stylesheet" href="/assets/css/bootstrap.min.css")
+    link(rel="stylesheet" href="/assets/css/default.css")
+    link(href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css")
+    script(type='text/javascript' src="/assets/js/main.js")
+    script(type='text/javascript' src="/assets/js/jquery-3.5.1.slim.min.js")
+    script(type='text/javascript' src="/assets/js/popper.min.js")
+    script(type='text/javascript' src="/assets/js/bootstrap.min.js")
+  body
+    div.container.card.mt-5.p-4.col-md-4.justify-content-center.body-card-fail
+        p.text-center= message
