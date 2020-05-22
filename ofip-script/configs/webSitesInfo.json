@@ -16,6 +16,66 @@
             ]
         },
         {
+            "name" : "www.gov.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "ufrj.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name" : "www.defesa.gov.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace": [
+                {
+                    "replace_type" : 0,
+                    "start" : null,
+                    "end" : null
+                }
+            ]
+        },
+        {
+            "name": "www.noticiasagricolas.com.br",
+            "tag1": "div",
+            "attrs_?": {
+                "att": "class",
+                "att_value": "materia"
+            },
+            "text_to_replace": [
+                {
+                    "replace_type":0,
+                    "start": null,
+                    "end": null
+                }
+            ]
+        },
+        {
             "name" : "www.portaldaindustria.com.br",
             "tag1" : "p",
             "attrs_?" : {
@@ -432,11 +492,297 @@
             }]
         },
         {
+            "name" : "www.correio24horas.com.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "bodytext"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.opovo.com.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "texto"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.bol.uol.com.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "text"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.camara.leg.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "portal.fiocruz.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "portalcorreio.com.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "post-content"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "pt.euronews.com",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.efe.com",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "id",
+                "att_value" : "div_texto"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "valorinveste.globo.com",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "content-text__container"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "news.umich.edu",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "news.umich.edu",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
             "name" : "agenciabrasil.ebc.com.br",
             "tag1" : "p",
             "attrs_?" : {
                 "att" : "class",
                 "att_value" : ""
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "brasil.estadao.com.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "n--noticia__content content"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.anf.org.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.prnewswire.com",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "jovempan.com.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "context"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "translations.state.gov",
+            "tag1" : "section",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "content"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.canalrural.com.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "fl-rich-text"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.saude.df.gov.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "id",
+                "att_value" : "conteudo"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "veja.abril.com.br",
+            "tag1" : "section",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "content"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "www.sunoresearch.com.br",
+            "tag1" : "p",
+            "attrs_?" : {
+                "att" : null,
+                "att_value" : null
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "inep.gov.br",
+            "tag1" : "div",
+            "attrs_?" : {
+                "att" : "class",
+                "att_value" : "article__content"
+            },
+            "text_to_replace" : [{
+                "replace_type" : 0,
+                "start" : null,
+                "end" : null
+            }]
+        },
+        {
+            "name" : "setorsaude.com.br",
+            "tag1" : "article",
+            "attrs_?" : {
+                "att" : "id",
+                "att_value" : "fonte"
             },
             "text_to_replace" : [{
                 "replace_type" : 0,

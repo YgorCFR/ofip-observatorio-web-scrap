@@ -7,7 +7,7 @@ from sqlalchemy.orm import sessionmaker
 #Using mysql.connector to connect
 import mysql.connector
 #Plugging with mysql database
-engine = db.create_engine('******')
+engine = db.create_engine('mysql+mysqlconnector://root:**********@localhost:3306/ofip')
 connection = engine.connect()
 
 

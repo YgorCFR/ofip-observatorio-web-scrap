@@ -8,11 +8,10 @@ import re
 from xml.etree import ElementTree as etree
 import pandas as pd
 from scrapy.utils.project import get_project_settings
-from scrapy import signals
+from scrapy import Request, signals
 from scrapy.signalmanager import dispatcher
 import logging
 from scrapy.utils.log import configure_logging
-
 
 
 configure_logging(install_root_handler=True)
@@ -25,11 +24,16 @@ class MySpider(scrapy.Spider):
     allowed_domains = []
     start_urls = []
     
+    def start_requests(self):
+        for  id, url in self.start_urls:
+            yield Request(url, callback=self.parse, meta={'id': id})
+
     def parse(self, response):
         dic = {}
         #Extracting the content using css selectors
         dic["response"] = response.text
         dic["url"] = response.request.url
+        dic["id"] = response.meta['id']
         yield dic
 
 def spider_results():
@@ -80,17 +84,18 @@ def scrap(df):
         
         news_data = []
         index = 0
-        for item in df.loc[:, ['Url', 'Source']].values.tolist():
-            
+        for item in df.loc[:, ['Url', 'Source', 'Url_ID']].values.tolist():
+            item[0] = item[0].strip()
             searched_site = None
             tag1 = '' 
             att = None
             att_value = None
             text_to_replace = []
             if item[1] in [ i[0] for i in web_sites_info]:
+                # take the correspond index of item in web_sites_info
                 index_site = findItem(web_sites_info, item[1])
                 searched_site = data['site_info'][index_site[0][0]]
-                news_data.append([item[0], 'C/D', searched_site])
+                news_data.append([item[0], 'C/D', searched_site, item[2]])
                 tag1 = searched_site['tag1']
                 att = searched_site['attrs_?']['att']
                 att_value = searched_site['attrs_?']['att_value']
@@ -98,19 +103,25 @@ def scrap(df):
                 site_name = searched_site['name']
                 searched_site['url'] = item[0]
                 MySpider.allowed_domains.append(site_name)
-                MySpider.start_urls.append(item[0])
+                MySpider.start_urls.append((item[2],item[0]))
                 # result = run_scrap_script(searched_site, item[0])
                 # news_data.append(result)
                 # MySpider.allowed_domains.clear()
                 # MySpider.start_urls.clear()
             else:
-                news_data.append([item[0], 'S/D', searched_site])
+                news_data.append([item[0], 'S/D', searched_site, item[2]])
             index += index
         df["News"] = pd.Series([new[2] for new in news_data])
         df = run_scrap_script(news_data, df)
-        df = df.dropna()  
+        df = df.dropna()
+        df = drop_registers_with_inconsistence(df)  
         df = df.reset_index(drop=True)              
         return df
+
+def drop_registers_with_inconsistence(df):
+    df = df[~df.News.str.contains("{'name':")]
+    return df
+
 def run_scrap_script(data_info, df):
     try:
         # op = webdriver.ChromeOptions()
@@ -131,8 +142,9 @@ def run_scrap_script(data_info, df):
         res = sorted(res, key=lambda k: k['url']) 
         index = 0
         for result in res:
-            url = str(result["url"])
+            url = str(result["url"]).strip()
             content = str(result["response"])
+            cod_url = int(result["id"])
             soup = BeautifulSoup(content, features='lxml')
             conteudo_do_site = []
             texto = ''
@@ -160,10 +172,10 @@ def run_scrap_script(data_info, df):
                 if text_item['replace_type'] == 3:
                     if texto_bs_refinado.__contains__(text_item['end']):
                         texto_bs_refinado = texto_bs_refinado.replace(texto_bs_refinado[:texto_bs_refinado.index(text_item['end'])],"")
-            scrap_exit.append([texto_bs_refinado, url])
+            scrap_exit.append([texto_bs_refinado, url, cod_url])
             index = index +  1
         for exits in scrap_exit:
-            df.loc[df.Url == exits[1], 'News'] = exits[0]
+            df.loc[df.iloc[:, 7] == exits[2], ['News']] = exits[0]
         return df
     except Exception as ex:
         raise ex

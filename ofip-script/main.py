@@ -36,12 +36,12 @@ def main():
     #saving to 'fonte' table
     f.save(_.fonte ,f.combine_three_lists(get_list_of_df_url, get_list_of_df_sites_id, get_list_of_df_keywords_id))    
 
-    #get list of news processed.
-    processed_data = s.scrap(processed_data)
-
     #retrieving url's ids.
     urls_id = f.id_per_value(list(processed_data['Url']), _.fonte.columns.id, _.fonte.columns.fonte)
     processed_data['Url_ID'] = urls_id
+
+    #get list of news processed.
+    processed_data = s.scrap(processed_data)
     
     #avoid ambiguity in news table
     processed_data = f.check_if_register_exists(_.noticia, processed_data, 'Url_ID', _.noticia.columns.texto, _.noticia.columns.fonte)

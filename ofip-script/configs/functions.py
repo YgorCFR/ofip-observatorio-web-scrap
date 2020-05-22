@@ -119,7 +119,18 @@ def proccess_date(date_analysed):
         date = date.strftime("%Y-%m-%d %H:%M:%S")
         return date
     except:
-        date_analysed =  (datetime.today() - timedelta(days=int(api.daysBefore[1:]))).strftime("%Y-%m-%d %H:%M:%S")
+        prefix = api.daysBefore[:1]
+        
+        days = int(api.daysBefore[1:])
+        
+        if prefix.__contains__('m'):
+            days = days * 30
+        if prefix.__contains__('y'):
+            days = days * 365
+        if prefix.__contains__('w'):
+            days = days * 7
+
+        date_analysed =  (datetime.today() - timedelta(days=days)).strftime("%Y-%m-%d %H:%M:%S")
         date = dateutil.parser.parse(date_analysed)
         date = date.strftime("%Y-%m-%d %H:%M:%S")
         return date
