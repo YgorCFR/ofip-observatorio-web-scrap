@@ -1,0 +1,44 @@
+{
+    "root": {
+        "api": "/api",
+        "version": "/v1"
+    },
+    "routes" : {
+        "login": {
+            "name": "login",
+            "route":"/auth/login"
+        },
+        "register": {
+            "name": "register",
+            "route": "/auth/register"
+        },
+        "get_projects": {
+            "name": "get_projects",
+            "route": "/project/projects/all"
+        },
+        "get_project": {
+            "name": "get_project",
+            "route": "/project/projects/:id"
+        },
+        "register_project": {
+            "name": "register_project",
+            "route": "/project/projects"
+        },
+        "logout" : {
+            "name": "logout",
+            "route":"/auth/logout"
+        },
+        "forgot_password": {
+            "name": "forgot_password",
+            "route":"/auth/forgot-password"
+        },
+        "reset_password": {
+            "name": "reset_password",
+            "route": "/auth/reset-password"
+        },
+        "change_password" : {
+            "name": "change-password",
+            "route": "/auth/change-password"
+        }
+    }
+}
