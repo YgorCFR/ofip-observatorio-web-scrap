@@ -1,0 +1,25 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.body-card-success {
+    background-color: #bcffbc;
+    border: #85ff85 0.5px solid;
+    border-radius: 5px;
+    color: green;
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.body-card-fail {
+    background-color: #ffc4bc;
+    border: #ff9785 0.5px solid;
+    border-radius: 5px;
+    color: rgb(128, 0, 0);
+    font-family: Ubuntu;
+    font-weight: 500;
+    font-size: 22px;
+}
+
