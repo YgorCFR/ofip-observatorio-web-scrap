@@ -4,8 +4,8 @@ const cache = require('../config/cache');
 const redis = cache.client;
 
 const checkAuth = (req, res, next) => {
-    var token = req.cookies.token.token;
-    if (!token) 
+    var token = req.cookies.token == undefined ? null : req.cookies.token.token;
+    if (token == null) 
         return res.status(403).send({auth: false, message: 'No token provided.'});
 
     jwt.verify(token, config.jwtSecret, (err, decoded) => {
@@ -19,6 +19,26 @@ const checkAuth = (req, res, next) => {
         next();
     });
 };
+
+let setCookiesToken = (req, res, next) => {
+    let token = req.headers.authorization == undefined ? null :req.headers.authorization;
+    if (token != null) {
+        if (token.includes("Bearer")) {
+            token = token.replace("Bearer ", "").trim();
+            req.cookies.token = {
+                token: token
+            };
+            next();
+        }
+    } else {
+        req.cookies.token = {
+            token: null
+        }
+        next();
+    }
+
+}
+
 
 const checkIfTokenIsFromBlackList = (req, res, next) => {
     return new Promise(
@@ -50,11 +70,16 @@ const hasRole = (route) => {
                 throw error;
             }
             let user_data = JSON.parse(result);
-            user_data.routes.forEach(element => {
-                if (route.trim() == element.name.trim()) {
-                    matches.push(element);
-                }
-            });
+            if (user_data != null) {
+                user_data.routes.forEach(element => {
+                    if (route.trim() == element.name.trim()) {
+                        matches.push(element);
+                    }
+                });
+            }
+            else {
+                return res.status(400).send({auth: false, message: 'You are not logged in.'});
+            }
             if (matches.length == 0){
                 return res.status(403).send({auth: false, message: 'You do not have permissions.'});
             }
@@ -67,5 +92,6 @@ const hasRole = (route) => {
 module.exports = {
     checkAuth,
     hasRole,
-    checkIfTokenIsFromBlackList
+    checkIfTokenIsFromBlackList,
+    setCookiesToken
 };
