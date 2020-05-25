@@ -20,7 +20,7 @@ logging.disable(50)  # CRITICAL = 50
 
 
 class MySpider(scrapy.Spider):
-    name = 'redditbot'
+    name = 'ofipbot'
     allowed_domains = []
     start_urls = []
     
@@ -113,13 +113,13 @@ def scrap(df):
             index += index
         df["News"] = pd.Series([new[2] for new in news_data])
         df = run_scrap_script(news_data, df)
-        df = df.dropna()
-        df = drop_registers_with_inconsistence(df)  
+        df = drop_registers_with_inconsistence(df)
+        df = df.dropna()  
         df = df.reset_index(drop=True)              
         return df
 
 def drop_registers_with_inconsistence(df):
-    df = df[~df.News.str.contains("{'name':")]
+    df = df[~df["News"].str.contains("{'name':", na=False)]
     return df
 
 def run_scrap_script(data_info, df):
