@@ -247,10 +247,10 @@
         },
         {
             "name" : "noticias.r7.com",
-            "tag1" : "article",
+            "tag1" : "p",
             "attrs_?" : {
-                "att" : "class",
-                "att_value" : "content"
+                "att" : null,
+                "att_value" : null
             },
             "text_to_replace": [
                 {
@@ -482,8 +482,8 @@
             "name" : "brasil.elpais.com",
             "tag1" : "p",
             "attrs_?" : {
-                "att" : "class",
-                "att_value" : ""
+                "att" : null,
+                "att_value" : null
             },
             "text_to_replace" : [{
                 "replace_type" : 0,
