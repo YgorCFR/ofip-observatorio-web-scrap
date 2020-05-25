@@ -15,7 +15,8 @@ const sequelize = new Sequelize(env.database, env.username, env.password, {
 });
  
 const db = {};
- 
+
+db.Op = Sequelize.Op;
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
@@ -32,39 +33,42 @@ db.Route = require('./route')(sequelize, Sequelize);
 db.Permission = require('./permission')(sequelize, Sequelize);
 
 // User's relationships.
-db.User.hasMany(db.UserProject, { foreignKey: 'userId'});
-db.User.belongsTo(db.Profile, {foreignKey: 'profileId'});
+db.User.hasMany(db.UserProject, { foreignKey: 'userId', as: 'user_fk0'});
+db.User.belongsTo(db.Profile, {foreignKey: 'profileId', as: 'profile_fk1'});
 
 
 // Project's relationships
-db.Project.hasMany(db.UserProject, { foreignKey: 'projectId'});
-db.Project.hasMany(db.KeyWord, { foreignKey: 'projectId'});
+db.Project.hasMany(db.UserProject, { foreignKey: 'projectId', as: 'project_fk1'});
+db.Project.hasMany(db.KeyWord, { foreignKey: 'projectId', as: 'project_fk0'});
 
 // UserProject's relationships
-db.UserProject.belongsTo(db.User, { foreignKey: 'userId'});
-db.UserProject.belongsTo(db.Project, { foreignKey: 'projectId'});
+db.UserProject.belongsTo(db.User, { foreignKey: 'userId', as: 'user_fk0'});
+db.UserProject.belongsTo(db.Project, { foreignKey: 'projectId', as: 'project_fk1'});
 
 // Vehicle's relationships
-db.Vehicle.hasMany(db.Source, { foreignKey: 'vehicleId'});
+db.Vehicle.hasMany(db.Source, { foreignKey: 'vehicleId', as: 'vehicle_fk0'});
 
 // Source's relationships
-db.Source.belongsTo(db.Vehicle, { foreignKey: 'vehicleId'});
-db.Source.belongsTo(db.KeyWord, { foreignKey: 'keyWordId'});
-db.Source.hasMany(db.News, { foreignKey: 'sourceId'});
+db.Source.belongsTo(db.Vehicle, { foreignKey: 'vehicleId', as: 'vehicle_fk0'});
+db.Source.belongsTo(db.KeyWord, { foreignKey: 'keyWordId', as: 'keyword_fk0'});
+db.Source.hasMany(db.News, { foreignKey: 'sourceId', as: 'source_fk0'});
 
 // KeyWord's relationships
-db.KeyWord.hasMany(db.Source, { foreignKey: 'keyWordId'});
-db.KeyWord.belongsTo(db.Project, { foreignKey: 'projectId'});
+db.KeyWord.hasMany(db.Source, { foreignKey: 'keyWordId', as: 'keyword_fk0'});
+db.KeyWord.belongsTo(db.Project, { foreignKey: 'projectId', as: 'project_fk0'});
 
 // Profile's relationships
-db.Profile.hasMany(db.User, {foreignKey: 'profileId'});
+db.Profile.hasMany(db.User, {foreignKey: 'profileId', as: 'profile_fk1'});
 db.Profile.hasMany(db.Permission, {foreignKey: 'profileId', as: 'profile_fk0'});
 
 // Permission's relationships
 db.Permission.belongsTo(db.Profile, {foreignKey: 'profileId', as : 'profile_fk0'});
 db.Permission.belongsTo(db.Route, {foreignKey: 'routeId', as: 'route_fk1'});
 
-// Route's reltionships
+// Route's relationships
 db.Route.hasMany(db.Permission, {foreignKey: 'routeId', as: 'route_fk1'});
+
+// News relationships
+db.News.belongsTo(db.Source, { foreignKey: 'sourceId', as: 'source_fk0'});
 
 module.exports = db;
