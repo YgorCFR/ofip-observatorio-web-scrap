@@ -8,6 +8,11 @@ const userService = require('../services/user');
 const cache = require('../config/cache');
 const redis = cache.client;
 
+/**
+ * Método de login.
+ * @param {*} req 
+ * @param {*} res 
+ */
 function login(req, res) {
     return authService.authenticate(req.body, res)
     .then(token => { 
@@ -54,6 +59,23 @@ let forgotPassword = async(req, res, next) => {
     });
 }
 
+let refreshToken = (req, res, next) => {
+    return authService.refreshToken(req, res, next)
+        .then(data => {
+            res.send({
+                success: true,
+                data: { data },
+                message: 'Token refreshed'
+            });   
+        })
+        .catch(err => {
+            res.status(400).send({
+                success: false,
+                message: err.message
+            })
+        });
+}
+
 let renderResetPassword =  (req, res) => {
     let query = req.query.h;
     let user = req.query.user;
@@ -68,6 +90,9 @@ let changePassword = async (req, res, next) => {
         res.status(400).render( 'fail',{ title:'Falha na troca da senha', message: err.message })
     });
 }
+
+
+
 
 function register(req, res) {
     var email = req.body.email;
@@ -99,6 +124,7 @@ module.exports = {
     logout,
     forgotPassword,
     renderResetPassword,
-    changePassword
+    changePassword,
+    refreshToken
 };
 
