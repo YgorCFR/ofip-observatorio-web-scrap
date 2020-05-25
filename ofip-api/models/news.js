@@ -21,6 +21,9 @@ module.exports = (sequelize, DataTypes) => {
             field: 'data',
             type: DataTypes.DATE
         }
+    },{
+        freezeTableName: true,
+        timestamps: false
     });
 
     return News;

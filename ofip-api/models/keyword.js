@@ -9,10 +9,14 @@ module.exports = (sequelize, DataTypes) => {
             field: 'valor',
             type: DataTypes.STRING,
         },
-        project : {
+        projectId : {
             field: 'projeto',
             type: DataTypes.BIGINT
         }
+    },
+    {
+        freezeTableName: true,
+        timestamps: false
     });
 
     return KeyWord;
