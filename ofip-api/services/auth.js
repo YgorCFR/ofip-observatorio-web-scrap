@@ -135,6 +135,40 @@ const changePassword = async (req, res, next) => {
 
 }
 
+const refreshToken  =  (req, res, next) => {
+    let key = req.body.key == undefined? null : req.body.key; 
+    return Users.findOne({
+        where: {
+            email: req.body.email
+        },
+        raw: true
+    }).then(user => {
+        if (!user)
+            throw new Error('Authentication failed. User not found.');
+        
+        if (!key) 
+            throw new Error('Please send your key.');
+
+        const payload = {
+            email: user.email,
+            id: user.id,
+            time: makeCurrentDateByCorrectTimeZone(new Date())
+        };
+
+        var token = jwt.sign(payload, config.jwtSecret, {
+            expiresIn: config.tokenExpireTime
+        });
+
+        var authData = {
+            token: token,
+            expiration: checkExpiration(config.tokenExpireTime, payload.time)
+        };
+
+        redis.expire(key, parseInt(config.tokenExpireTime, 10) * 60 * 60);
+        
+        return authData;
+    });
+}
 
 const logout = (req, res) => {
     let currentDate = new Date();
@@ -254,5 +288,6 @@ module.exports = {
     authenticate,
     logout,
     forgotPassword,
-    changePassword
+    changePassword,
+    refreshToken
 };
