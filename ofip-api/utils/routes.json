@@ -39,6 +39,14 @@
         "change_password" : {
             "name": "change-password",
             "route": "/auth/change-password"
+        },
+        "refresh_token" : {
+            "name": "refresh-token",
+            "route": "/auth/refresh-token"
+        },
+        "get_news_header": {
+            "name": "get-news-header",
+            "route": "/news/get-news-header/:page/:size"
         }
     }
 }
