@@ -63,7 +63,17 @@ module.exports.set = (app) => {
     //#endregion
 
     //#region Rotas de notícias
+    /**
+     * rota de listagem de cabeçalho de notícias.
+     */
     app.get(`${root}${main.get_news_header.route}`, newsController.getNewsHeader);
-
+    /**
+     * rota de detalhamento de notícias.
+     */
+    app.get(`${root}${main.get_news_detail.route}`, newsController.getNewsDetail);
+    /**
+     * rota de criação de notícias.
+     */
+    app.post(`${root}${main.create_news.route}`, newsController.createNews);
     //#endregion
 };
