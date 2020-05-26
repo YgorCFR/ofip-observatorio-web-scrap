@@ -1,5 +1,6 @@
 const model = require('../models/index');
 const pagination = require('../utils/paging');
+const dateUtil = require('../utils/date');
 
 // Getting models that are will be used to do the queries
 const KeyWords = model.KeyWord;
@@ -97,9 +98,105 @@ const getNewsHeader = (req, res, next) => {
     });
 };
 
+
+const getNewsDetail = (req, res, next) => {
+    let where = {};
+    if (!req.params.id) {
+        throw new Error('Please, provide an id for the news detail.');
+    }
+    where.id = {
+        [Op.and] : [
+            req.params.id
+        ]
+    }
+    return News.findAll({
+        subQuery: false,
+        required: true,
+        attributes: ['id', 'date', 'title', 'text'],
+        include: [{
+            model: Source,
+            required: true,
+            attributes: ['id', 'url'],
+            as: 'source_fk0'
+        }]
+        , where: where
+    }).then(news => {
+        if (!news) {
+            throw new Error('Not found.');
+        }
+        
+        return news;
+
+    }).catch(err => {
+        throw new Error(err);   
+    });
+};
+
+const createNews = async (req, res, next) => { 
+    let remainingSource = await Source.findAll({
+        where: {
+            url: req.body.url,
+            vehicleId: req.body.vehicleId,
+            keyWordId: req.body.keyWordId
+        }
+    });
+
+    let remainingNews = await News.findAll({
+        where : {
+            title: req.body.title,
+            text: req.body.text
+        }
+    });
+    console.log(remainingSource);
+    if (remainingNews.length > 0) {
+        throw new Error('This news is already at database.');
+    }
+
+    if (remainingSource.length > 0) {
+        throw new Error('This source is already at database.');
+    }
+
+    let result = await sequelize.transaction(async (t) => {
+    
+        if (remainingSource.length == 0 || remainingNews.length == 0) {
+            const source = await Source.create({
+                url: req.body.url,
+                vehicleId: req.body.vehicleId,
+                keyWordId: req.body.keyWordId
+            }, {transaction: t});
+
+            const news = await News.create({
+                title: req.body.title,
+                text: req.body.text,
+                sourceId: source.dataValues.id,
+                date: dateUtil.makeCurrentDateByCorrectTimeZone(new Date)
+            }, {transaction: t});
+
+            return news;
+        }
+        else {
+            throw new Error('O registro já existe.');
+        }
+
+    });
+
+    return new Promise(
+        function(resolve, reject) {
+            resolve(result);
+        }
+    ).then(result => {
+        return result;
+    }).catch(err=> {
+        console.log(err);
+        throw new Error(err);
+    })
+}
+
 module.exports = {
     getAllNews,
-    getNewsHeader
+    getNewsHeader,
+    getNewsDetail,
+    createNews
 }
 
 

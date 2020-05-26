@@ -11,6 +11,7 @@ const redis = cache.client;
 const CryptoJS = require("crypto-js");
 const routes = require('../utils/routes_util');
 const mailer = require('../config/email');
+const dateUtil = require('../utils/date');
 
 let route = routes.getServerRoutes();
 let main = route.routes;
@@ -30,7 +31,7 @@ const authenticate = (params,res) => {
         const payload = {
             email: user.email,
             id: user.id,
-            time: makeCurrentDateByCorrectTimeZone(new Date())
+            time: dateUtil.makeCurrentDateByCorrectTimeZone(new Date())
         };
 
         var token = jwt.sign(payload, config.jwtSecret, {
@@ -39,7 +40,7 @@ const authenticate = (params,res) => {
 
         var authData = {
             token: token,
-            expiration: checkExpiration(config.tokenExpireTime, payload.time)
+            expiration: dateUtil.checkExpiration(config.tokenExpireTime, payload.time)
         };
         
         getUserPermissions(user);
@@ -152,7 +153,7 @@ const refreshToken  =  (req, res, next) => {
         const payload = {
             email: user.email,
             id: user.id,
-            time: makeCurrentDateByCorrectTimeZone(new Date())
+            time: dateUtil.makeCurrentDateByCorrectTimeZone(new Date())
         };
 
         var token = jwt.sign(payload, config.jwtSecret, {
@@ -161,7 +162,7 @@ const refreshToken  =  (req, res, next) => {
 
         var authData = {
             token: token,
-            expiration: checkExpiration(config.tokenExpireTime, payload.time)
+            expiration: dateUtil.checkExpiration(config.tokenExpireTime, payload.time)
         };
 
         redis.expire(key, parseInt(config.tokenExpireTime, 10) * 60 * 60);
@@ -175,7 +176,7 @@ const logout = (req, res) => {
     let remainingDate= new Date(req.cookies.token.expiration);
     let token = req.cookies.token.token;
     let key = cache.makeTheBlackListKey(token, config.blacklist); 
-    let ttl = calculateDiffToExpiration(currentDate, remainingDate);
+    let ttl = dateUtil.calculateDiffToExpiration(currentDate, remainingDate);
     return new Promise(
         function (resolve, reject) {
             if (currentDate < remainingDate) { 
@@ -198,9 +199,7 @@ const logout = (req, res) => {
     });
 }
 
-let calculateDiffToExpiration = (startDate, endDate) => {
-    return (endDate.getTime() - startDate.getTime()) / 1000; 
-}
+
 
 let getUserPermissions = (user) => {
     Users.findAll({
@@ -265,24 +264,7 @@ let getUserPermissions = (user) => {
 };
 
 
-let checkExpiration = (expiration, time) => {
-    if (expiration.includes("h")) {
-        time.setHours(time.getHours() + parseInt(expiration));
-        return time;
-    }
-    if (expiration.includes("m")) {
-        time.setMinutes(time.getMinutes() + parseInt(expiration));
-        return time;
-    }
-    if (expiration.includes("s")) {
-        time.setSeconds(time.getSeconds() + parseInt(expiration));
-        return time;
-    }
-};
 
-let makeCurrentDateByCorrectTimeZone = (date) => {
-    return new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate(), date.getHours(), date.getMinutes(), date.getSeconds()));
-};
 
 module.exports = {
     authenticate,
