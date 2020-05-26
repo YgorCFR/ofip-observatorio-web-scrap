@@ -5,7 +5,6 @@ const bcrypt = require('bcrypt');
 const newsService = require('../services/news');
 
 const cache = require('../config/cache');
-const redis = cache.client;
 
 
 const getNewsHeader = (req, res, next) => {
@@ -28,7 +27,48 @@ const getNewsHeader = (req, res, next) => {
         )
 };
 
+const getNewsDetail = (req, res, next) => {
+    return newsService.getNewsDetail(req, res, next)
+        .then(
+            news => {
+                res.send({
+                    success: true,
+                    data: { news }
+                })
+            }
+        )
+        .catch(
+            err => {
+                res.status(400).send({
+                    success: false,
+                    message: err
+                })
+            }
+        )
+};
+
+const createNews = async (req, res, next) => {
+    return  await newsService.createNews(req, res, next)
+            .then(
+                news => {
+                    res.send({
+                        success: true,
+                        data: { news }
+                    })
+                })
+            .catch(
+                err => {
+                    res.status(400).send({
+                        success: false,
+                        message: 'This news does already exists at database.'
+                    })
+                }
+            )
+}
+
 
 module.exports = {
-    getNewsHeader
+    getNewsHeader,
+    getNewsDetail,
+    createNews
 }
