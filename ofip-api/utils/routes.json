@@ -47,6 +47,14 @@
         "get_news_header": {
             "name": "get-news-header",
             "route": "/news/get-news-header/:page/:size"
+        },
+        "get_news_detail": {
+            "name": "get-news-detail",
+            "route": "/news/get-news-detail/:id"
+        },
+        "create_news" : {
+            "name": "create-news",
+            "route": "/news/create-news"
         }
     }
 }
