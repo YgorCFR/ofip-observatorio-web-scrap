@@ -55,6 +55,10 @@
         "create_news" : {
             "name": "create-news",
             "route": "/news/create-news"
+        },
+        "delete_news": {
+            "name": "delete-news",
+            "route" : "/news/delete-news/:id"
         }
     }
 }
