@@ -75,5 +75,10 @@ module.exports.set = (app) => {
      * rota de criação de notícias.
      */
     app.post(`${root}${main.create_news.route}`, newsController.createNews);
+    /**
+     * rota de deleção de notícias.
+     */
+    app.delete(`${root}${main.delete_news.route}`, newsController.deleteNews);
     //#endregion
+
 };
