@@ -66,9 +66,29 @@ const createNews = async (req, res, next) => {
             )
 }
 
+const deleteNews = async (req, res, next) => {
+    return await newsService.deleteNews(req, res, next)
+            .then(
+                news => {
+                    res.send({
+                        success: true,
+                        data: { news }
+                    })
+                })
+            .catch(
+                err => {
+                    res.status(400).send({
+                        success: false,
+                        message: err
+                    })
+                }
+            )
+}
+
 
 module.exports = {
     getNewsHeader,
     getNewsDetail,
-    createNews
+    createNews,
+    deleteNews
 }
