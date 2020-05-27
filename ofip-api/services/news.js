@@ -192,11 +192,42 @@ const createNews = async (req, res, next) => {
     })
 }
 
+
+const deleteNews = async (req, res, next) => {
+    let remainingNews = await News.findOne({
+        where: {
+            id: parseInt(req.params.id,10)
+        }
+    }).then(news => {
+        return news;
+    });
+
+    
+    if (!remainingNews) {
+        throw new Error("This news doesn't exists.");
+    }
+
+    await News.destroy({
+        where: {id: remainingNews.dataValues.id }
+    });
+
+    return Source.destroy({
+        where: {id: remainingNews.dataValues.sourceId }
+    }).then(
+        result => {
+            return result;
+        }
+    ).catch(err => {
+        next(err);
+    });
+}
+
 module.exports = {
     getAllNews,
     getNewsHeader,
     getNewsDetail,
-    createNews
+    createNews,
+    deleteNews
 }
 
 
