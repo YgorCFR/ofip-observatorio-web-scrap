@@ -17,6 +17,16 @@ const getAllNews = () => News.findAll();
 
 const getNewsHeader = (req, res, next) => {
     let where = {};
+    // atributos de noticias.
+    let attributesNews = req.params.full == false ? ['id', 'title','date', 'sourceId'] : ['id', 'title','date', 'sourceId', 'text'];
+    // atributos de fonte.
+    let attributesSource = req.params.full == false? ['id'] : ['url']; 
+    // atributos de veiculo.
+    let attributesVehicle = req.params.full == false ? ['id'] : ['site'];
+    // atributos de projeto.
+    let attributesProject = req.params.full == false ? ['id'] : ['name'];
+    // atributos de palavra chave.
+    let attributesKeyword = req.params.full == false ? ['id'] : ['value'];
     // condições de data
     if ((req.query.start != undefined) || (req.query.start != null) && (req.query.end != undefined) || (req.query.end != null)) {
         where.date = { [Op.gte] : req.query.start, [Op.lte] : req.query.end }
@@ -59,37 +69,37 @@ const getNewsHeader = (req, res, next) => {
     return News.findAll({
         subQuery: false,
         required: true,
-        attributes: ['id', 'title','date', 'sourceId'],
+        attributes: attributesNews,
         include: [{
             model: Source,
-            attributes: ['id'],
+            attributes: attributesSource,
             subQuery: false,
             as: 'source_fk0',
             required: true,
             include: [{
                 model: KeyWords,
-                attributes: ['id'],
+                attributes: attributesKeyword,
                 subQuery: false,
                 required: true,
                 as: 'keyword_fk0',
                 include: [{
                     model: Project,
-                    attributes: ['id'],
+                    attributes: attributesProject,
                     subQuery: false,
                     required: true,
                     as: 'project_fk0'
                 }]
             },{
                 model: Vehicle,
-                attributes: ['id'],
+                attributes: attributesVehicle,
                 subQuery: false,
                 required: true,
                 as: 'vehicle_fk0'
             }]
         }]
         , order: [['date', 'DESC']]
-        , limit: pagesAndLimits.limit
-        , offset: pagesAndLimits.offset
+        , limit: req.params.paginate == false? null : pagesAndLimits.limit
+        , offset: req.params.paginate == false? null : pagesAndLimits.offset
         , where: where
     }).then(news => {
         return news;
@@ -192,6 +202,33 @@ const createNews = async (req, res, next) => {
     })
 }
 
+const editNews = async (req, res, next) => {
+    let remainingNews = await News.findOne({
+        where: {
+            id: req.params.id
+        }
+    }).then(news => {
+        return news
+    });
+
+    if (!remainingNews) {
+        throw new Error("This news doesn't exists.");
+    }
+
+    await News.update({
+        title: req.body.title,
+        text: req.body.text
+    },{
+        where: {
+            id: remainingNews.dataValues.id
+        }
+    }).then(news => {
+
+    }).catch(err => {
+        next(err);
+    });
+}
+
 
 const deleteNews = async (req, res, next) => {
     let remainingNews = await News.findOne({
@@ -222,12 +259,81 @@ const deleteNews = async (req, res, next) => {
     });
 }
 
+const mapNewsContent = (req, res, next) => {
+    return getNewsHeader(req, res, next)
+            .then(
+                news => {
+                    let data = [];
+                    news.forEach((key) => {
+                        // console.log(key.dataValues.id);
+                        // console.log(key.dataValues.title);
+                        // console.log(key.dataValues.date);
+                        // console.log(key.dataValues.text);
+                        // console.log(key.dataValues.source_fk0.dataValues.url);
+                        // console.log(key.dataValues.source_fk0.dataValues.keyword_fk0.dataValues.value);
+                        // console.log(key.dataValues.source_fk0.dataValues.vehicle_fk0.dataValues.site);
+                        // console.log(key.dataValues.source_fk0.dataValues.keyword_fk0.dataValues.project_fk0.name);
+                        data.push({
+                            id: key.dataValues.id,
+                            titulo: key.dataValues.title,
+                            data: key.dataValues.date,
+                            texto: key.dataValues.text,
+                            url: key.dataValues.source_fk0.dataValues.url,
+                            palavra_chave: key.dataValues.source_fk0.dataValues.keyword_fk0.dataValues.value,
+                            site: key.dataValues.source_fk0.dataValues.vehicle_fk0.dataValues.site,
+                            projeto: key.dataValues.source_fk0.dataValues.keyword_fk0.dataValues.project_fk0.name
+                        });
+                    });
+
+                    return data;
+            })
+            .catch(
+                err => {
+                    next(err);
+                });
+}
+
+const mapNewsContentTabular = (req, res, next) => {
+    return getNewsHeader(req, res, next).then(
+        news => {
+            let data = [];
+            news.forEach((key) => {
+                // console.log(key.dataValues.id);
+                // console.log(key.dataValues.title);
+                // console.log(key.dataValues.date);
+                // console.log(key.dataValues.text);
+                // console.log(key.dataValues.source_fk0.dataValues.url);
+                // console.log(key.dataValues.source_fk0.dataValues.keyword_fk0.dataValues.value);
+                // console.log(key.dataValues.source_fk0.dataValues.vehicle_fk0.dataValues.site);
+                // console.log(key.dataValues.source_fk0.dataValues.keyword_fk0.dataValues.project_fk0.name);
+                data.push([
+                    key.dataValues.id,
+                    key.dataValues.title,
+                    key.dataValues.date,
+                    key.dataValues.text,
+                    key.dataValues.source_fk0.dataValues.url,
+                    key.dataValues.source_fk0.dataValues.keyword_fk0.dataValues.value,
+                    key.dataValues.source_fk0.dataValues.vehicle_fk0.dataValues.site,
+                    key.dataValues.source_fk0.dataValues.keyword_fk0.dataValues.project_fk0.name
+                ]);
+            });
+            return data;
+        })
+        .catch(
+            err => {
+                next(err);
+            });
+}
+
 module.exports = {
     getAllNews,
     getNewsHeader,
     getNewsDetail,
     createNews,
-    deleteNews
+    deleteNews,
+    editNews,
+    mapNewsContent,
+    mapNewsContentTabular
 }
 
 
