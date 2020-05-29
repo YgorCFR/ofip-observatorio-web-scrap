@@ -26,6 +26,7 @@
     "cors": "^2.8.5",
     "crypto-js": "^4.0.0",
     "dotenv": "^8.2.0",
+    "exceljs": "^3.9.0",
     "express": "^4.17.1",
     "gitignore": "^0.6.0",
     "helmet": "^3.22.0",
@@ -39,6 +40,7 @@
     "pug": "^2.0.4",
     "redis": "^3.0.2",
     "sequelize": "^5.21.6",
-    "sequelize-values": "^1.1.0"
+    "sequelize-values": "^1.1.0",
+    "table": "^5.4.6"
   }
 }
