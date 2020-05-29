@@ -79,6 +79,18 @@ module.exports.set = (app) => {
      * rota de deleção de notícias.
      */
     app.delete(`${root}${main.delete_news.route}`, newsController.deleteNews);
+    /**
+     * rota de edição de notícias.
+     */
+    app.put(`${root}${main.update_news.route}`, newsController.editNews);
+    /**
+     * rota de exportação de notícia para excel
+     */
+    app.get(`${root}${main.export_filter_news_xls.route}`, newsController.exportNewsToExcel);
+    /**
+     * rota de exportação de notícia para txt
+     */
+    app.get(`${root}${main.export_filter_news_txt.route}`, newsController.exportNewsToTxt);
     //#endregion
 
 };
