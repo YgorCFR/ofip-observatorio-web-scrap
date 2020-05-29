@@ -46,7 +46,7 @@
         },
         "get_news_header": {
             "name": "get-news-header",
-            "route": "/news/get-news-header/:page/:size"
+            "route": "/news/get-news-header/:page/:size/:paginate/:full"
         },
         "get_news_detail": {
             "name": "get-news-detail",
@@ -59,6 +59,18 @@
         "delete_news": {
             "name": "delete-news",
             "route" : "/news/delete-news/:id"
+        },
+        "update_news": {
+            "name": "update-news",
+            "route": "/news/update-news/:id"
+        },
+        "export_filter_news_xls": {
+            "name": "export-filter-news-xls",
+            "route": "/news/export-filter-news-xls/:page/:size/:paginate/:full"
+        },
+        "export_filter_news_txt": {
+            "name": "export-filter-news-txt",
+            "route": "/news/export-filter-news-txt/:page/:size/:paginate/:full"
         }
     }
 }
