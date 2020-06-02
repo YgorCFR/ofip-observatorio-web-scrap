@@ -1,7 +1,7 @@
 const authController = require('./controllers/auth');
 const projectController = require('./controllers/project');
 const newsController = require('./controllers/news');
-
+const keywordController = require('./controllers/keyword');
 const authMiddleware = require('./middlewares/auth');
 
 const routes = require('./utils/routes_util');
@@ -92,5 +92,12 @@ module.exports.set = (app) => {
      */
     app.get(`${root}${main.export_filter_news_txt.route}`, newsController.exportNewsToTxt);
     //#endregion
+
+    //#region Rotas de palavras chave
+    /**
+     * rota de listagem de palavras chave
+     */
+    app.get(`${root}${main.get_keywords.route}`, keywordController.getAllKeyWords);
+    //#endregion 
 
 };
