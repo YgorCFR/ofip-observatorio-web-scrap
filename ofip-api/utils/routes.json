@@ -71,6 +71,10 @@
         "export_filter_news_txt": {
             "name": "export-filter-news-txt",
             "route": "/news/export-filter-news-txt/:page/:size/:paginate/:full"
+        },
+        "get_keywords" : {
+            "name": "get-keywords",
+            "route": "/keywords/get-keywords"
         }
     }
 }
