@@ -75,6 +75,10 @@
         "get_keywords" : {
             "name": "get-keywords",
             "route": "/keywords/get-keywords"
+        },
+        "register_keyword" : {
+            "name": "register-keyword",
+            "route": "/keywords/register-keyword"
         }
     }
 }
