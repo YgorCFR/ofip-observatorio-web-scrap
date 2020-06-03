@@ -98,6 +98,10 @@ module.exports.set = (app) => {
      * rota de listagem de palavras chave
      */
     app.get(`${root}${main.get_keywords.route}`, keywordController.getAllKeyWords);
+    /**
+     * rota de registro de palavra chave
+     */
+    app.post(`${root}${main.register_keyword.route}`, keywordController.registerKeyWords);
     //#endregion 
 
 };
