@@ -16,7 +16,24 @@ const getAllKeyWords = (req, res, next) => {
         })
 }
 
+const registerKeyWords = (req, res, next) => {
+    return keywordService.registerKeyWords(req, res, next)
+        .then(keywords => {
+            res.send({
+                success: true,
+                message: 'Registed keyword.'
+            })
+        })
+        .catch(err => {
+            res.status(400).send({
+                success: false,
+                message: err
+            })
+        })
+}
+
 module.exports = {
-    getAllKeyWords    
+    getAllKeyWords,
+    registerKeyWords    
 
 }
