@@ -1,7 +1,7 @@
 const env = {
     database: 'ofip',
     username: 'root',
-    password: '750qwe700kxy@',
+    password: 'root',
     host: 'localhost',
     dialect: 'mysql',
     pool: {
