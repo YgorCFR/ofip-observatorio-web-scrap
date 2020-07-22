@@ -10,7 +10,7 @@ const checkAuth = (req, res, next) => {
 
     jwt.verify(token, config.jwtSecret, (err, decoded) => {
         if (err)
-            return res.status(500).send({auth: false, message: 'Failed to authenticate token.'});
+            return res.status(401).send({auth: false, message: 'Failed to authenticate token.'});
         
         req.user = {
             email: decoded.email,
@@ -65,7 +65,7 @@ const hasRole = (route) => {
     return (req, res, next) => {
         let matches = [];
         
-        redis.get(req.body.key, function (error, result) {
+        redis.get(req.body.key || req.query.key, function (error, result) {
             if (error) {
                 throw error;
             }

@@ -99,10 +99,7 @@ function register(req, res) {
     return userService.getUserByLogin(req.body.email || '')
     .then(exists => {
         if (exists) {
-            return res.send({
-                success: false,
-                message: 'Registration failed. User with this email already registered.'
-            });
+            return res.status(400).json('Falha. Já existe um usuário com este email.');
         }
 
         var user = {
@@ -114,7 +111,8 @@ function register(req, res) {
         };
 
         return userService.addUser(user)
-            .then(() => res.send({success : true}));
+            .then(() => res.send({success : true}))
+            .catch(() => res.status(400).send("Falha. Já existe um usuário com este cpf."));
     });
 }
 

@@ -20,15 +20,15 @@ const getNewsHeader = (req, res, next) => {
     // atributos de noticias.
     let attributesNews = req.params.full == false ? ['id', 'title','date', 'sourceId'] : ['id', 'title','date', 'sourceId', 'text'];
     // atributos de fonte.
-    let attributesSource = req.params.full == false? ['id'] : ['url']; 
+    let attributesSource = req.params.full == false? ['id', 'url'] : ['url']; 
     // atributos de veiculo.
-    let attributesVehicle = req.params.full == false ? ['id'] : ['site'];
+    let attributesVehicle = req.params.full == false ? ['id', 'site'] : ['site'];
     // atributos de projeto.
-    let attributesProject = req.params.full == false ? ['id'] : ['name'];
+    let attributesProject = req.params.full == false ? ['id', 'name'] : ['name'];
     // atributos de palavra chave.
-    let attributesKeyword = req.params.full == false ? ['id'] : ['value'];
-    // condições de data
-    if ((req.query.start != undefined) || (req.query.start != null) && (req.query.end != undefined) || (req.query.end != null)) {
+    let attributesKeyword = req.params.full == false ? ['id', 'value'] : ['value'];
+    // condições de data    
+    if (((req.query.start != undefined) || (req.query.start != null)) && ((req.query.end != undefined) || (req.query.end != null))) {
         where.date = { [Op.gte] : req.query.start, [Op.lte] : req.query.end }
     } else if ((req.query.start != undefined) || (req.query.start != null)) { 
         where.date = { [Op.gte] : req.query.start }
@@ -37,21 +37,15 @@ const getNewsHeader = (req, res, next) => {
     }
     // condições de veículo
     if ((req.query.vehicleId != undefined) || (req.query.vehicleId != null))  {
-        where[Op.and] = [
-            { ['$source_fk0->vehicle_fk0.id$'] : parseInt(req.query.vehicleId)}  
-        ]
+        where['$source_fk0->vehicle_fk0.id$'] = parseInt(req.query.vehicleId);
     }
     // condições de palavra chave
     if ((req.query.keyWordId != undefined) || (req.query.keyWordId != null)) {
-        where[Op.and] = [
-            {['$source_fk0->keyword_fk0.id$'] : parseInt(req.query.keyWordId)}
-        ]
+        where['$source_fk0->keyword_fk0.id$'] = parseInt(req.query.keyWordId);
     }
     // condições de projeto 
     if ((req.query.projectId) != undefined || (req.query.projectId != null)) {
-        where[Op.and] = [
-            {['$source_fk0->keyword_fk0->project_fk0.id$'] : parseInt(req.query.projectId)}
-        ]
+        where['$source_fk0->keyword_fk0->project_fk0.id$'] = parseInt(req.query.projectId);
     }
     
     // condições para o texto
@@ -64,7 +58,6 @@ const getNewsHeader = (req, res, next) => {
 
     // Busca pelos limite de pagina e quantidade de registros por página
     let pagesAndLimits = pagination.pageHandler(req.params);
-    console.log(pagesAndLimits);
 
     return News.findAll({
         subQuery: false,
@@ -109,45 +102,13 @@ const getNewsHeader = (req, res, next) => {
 };
 
 
-const getNewsDetail = (req, res, next) => {
-    let where = {};
-    if (!req.params.id) {
-        throw new Error('Please, provide an id for the news detail.');
-    }
-    where.id = {
-        [Op.and] : [
-            req.params.id
-        ]
-    }
-    return News.findAll({
-        subQuery: false,
-        required: true,
-        attributes: ['id', 'date', 'title', 'text'],
-        include: [{
-            model: Source,
-            required: true,
-            attributes: ['id', 'url'],
-            as: 'source_fk0'
-        }]
-        , where: where
-    }).then(news => {
-        if (!news) {
-            throw new Error('Not found.');
-        }
-        
-        return news;
 
-    }).catch(err => {
-        throw new Error(err);   
-    });
-};
 
 const createNews = async (req, res, next) => { 
+    
     let remainingSource = await Source.findAll({
         where: {
-            url: req.body.url,
-            vehicleId: req.body.vehicleId,
-            keyWordId: req.body.keyWordId
+            url: req.body.url
         }
     });
 
@@ -259,6 +220,100 @@ const deleteNews = async (req, res, next) => {
     });
 }
 
+const getNewsDetail = (req, res, next) => {
+    let where = {};
+    if (!req.params.id) {
+        throw new Error('Please, provide an id for the news detail.');
+    }
+    where.id = {
+        [Op.and] : [
+            req.params.id
+        ]
+    }
+    return News.findAll({
+        subQuery: false,
+        required: true,
+        attributes: ['id', 'date', 'title', 'text'],
+        include: [{
+            model: Source,
+            required: true,
+            attributes: ['id', 'url'],
+            as: 'source_fk0'
+        }]
+        , where: where
+    }).then(news => {
+        if (!news) {
+            throw new Error('Not found.');
+        }
+        
+        return news;
+
+    }).catch(err => {
+        throw new Error(err);   
+    });
+};
+
+const mapNewsDetailContent = (req, res, next) => {
+    return getNewsDetail(req, res, next)
+        .then(
+            news => {
+                let data = [];
+                news.forEach((key) => {
+                   data.push({
+                    id: key.dataValues.id,
+                    title: key.dataValues.title,
+                    text: key.dataValues.text,
+                    date: key.dataValues.date,
+                    url_id: key.dataValues.source_fk0.dataValues.id,
+                    url: key.dataValues.source_fk0.dataValues.url
+                   })
+                })
+                return data;
+            })
+            .catch(
+                err => {
+                    next(err);
+                });
+}
+
+const mapNewsContentForClientResponse = (req, res, next) => {
+    return getNewsHeader(req, res, next)
+            .then(
+                news => {
+                    let data = [];
+                    news.forEach((key) => {
+                        // console.log(key.dataValues.id);
+                        // console.log(key.dataValues.title);
+                        // console.log(key.dataValues.date);
+                        // console.log(key.dataValues.text);
+                        // console.log(key.dataValues.source_fk0.dataValues.url);
+                        // console.log(key.dataValues.source_fk0.dataValues.keyword_fk0.dataValues.value);
+                        // console.log(key.dataValues.source_fk0.dataValues.vehicle_fk0.dataValues.site);
+                        // console.log(key.dataValues.source_fk0.dataValues.keyword_fk0.dataValues.project_fk0.name);
+                        data.push({
+                            id: key.dataValues.id,
+                            title: key.dataValues.title,
+                            date: key.dataValues.date,
+                            url_id: key.dataValues.source_fk0.dataValues.id,
+                            url: key.dataValues.source_fk0.dataValues.url,
+                            keyword_id: key.dataValues.source_fk0.dataValues.keyword_fk0.dataValues.id,
+                            palavra_chave: key.dataValues.source_fk0.dataValues.keyword_fk0.dataValues.value,
+                            site_id: key.dataValues.source_fk0.dataValues.vehicle_fk0.dataValues.id,
+                            site: key.dataValues.source_fk0.dataValues.vehicle_fk0.dataValues.site,
+                            project_id : key.dataValues.source_fk0.dataValues.keyword_fk0.dataValues.project_fk0.id,
+                            project: key.dataValues.source_fk0.dataValues.keyword_fk0.dataValues.project_fk0.name
+                        });
+                    });
+
+                    return data;
+            })
+            .catch(
+                err => {
+                    next(err);
+                });
+}
+
+
 const mapNewsContent = (req, res, next) => {
     return getNewsHeader(req, res, next)
             .then(
@@ -333,7 +388,9 @@ module.exports = {
     deleteNews,
     editNews,
     mapNewsContent,
-    mapNewsContentTabular
+    mapNewsContentTabular,
+    mapNewsContentForClientResponse,
+    mapNewsDetailContent
 }
 
 

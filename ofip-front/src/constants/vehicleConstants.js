@@ -1,0 +1,5 @@
+export const vehicleConstants = {
+    VEHICLE_SUCCESS: 'VEHICLE_SUCCESS',
+    VEHICLE_FAIL: 'VEHICLE_FAILED',
+    VEHICLE_LOAD: 'VEHICLE_LOADING'
+};

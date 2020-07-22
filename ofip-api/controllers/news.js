@@ -12,7 +12,7 @@ const cache = require('../config/cache');
 
 
 const getNewsHeader = (req, res, next) => {
-    return newsService.getNewsHeader(req, res, next)
+    return newsService.mapNewsContentForClientResponse(req, res, next)
         .then(
             news => {
                 res.send({
@@ -32,7 +32,7 @@ const getNewsHeader = (req, res, next) => {
 };
 
 const getNewsDetail = (req, res, next) => {
-    return newsService.getNewsDetail(req, res, next)
+    return newsService.mapNewsDetailContent(req, res, next)
         .then(
             news => {
                 res.send({

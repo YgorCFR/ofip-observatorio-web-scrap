@@ -140,9 +140,11 @@ def process_api_data(indexes=None,description=None, datePublish=None, title=None
     dfMain = pd.DataFrame()
     for indexItem in indexes:
         index = indexItem.split(',')
-        response = api.google_search("{0} {1}".format(index[0],"noticias"), api.api_key, api.cse_id, api.daysBefore, api.language)
+        response = api.google_search("{0} {1}".format(index[0], 'noticias'), api.api_key, api.cse_id, api.daysBefore, api.language)
         dataResponse = json.dumps(response)
         responseFormatted = json.loads(dataResponse)
+        if 'items' not in responseFormatted:
+            continue
         result = responseFormatted['items']
         for item in range(len(result)):  
             description = proccess_item(result[item], 10, 'snippet', 'og:description')    

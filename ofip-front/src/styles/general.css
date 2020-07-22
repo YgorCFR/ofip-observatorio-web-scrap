@@ -1,0 +1,16 @@
+.button-config {
+    background-color: #142c36 !important;
+    border: #142c36 solid 0.5px !important;
+    color: white !important;
+}
+
+.button-config:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #142c36 !important;
+    background-color: white !important;
+    border: #142c36 solid 0.5px !important; /*set the color you want here*/
+}
+
+label{
+    font-weight: 600;
+}
+

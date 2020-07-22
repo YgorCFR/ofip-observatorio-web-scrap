@@ -2,6 +2,7 @@ from configs import db as _
 from configs import api as api
 from configs import functions as f
 from configs import scrap as s
+from configs import logs as log
 import pandas as pd
 
 def main():
@@ -9,6 +10,9 @@ def main():
     #get palavras_chave
     key_words = f.list_desired_values(_.db.select([_.palavra_chave.columns.valor, _.palavra_chave.columns.id]))
     processed_data = f.process_api_data(key_words,'', '', '', '', '', '', [], ['Description', 'DatePublish', 'Title', 'Url', 'Source', 'KeyWordId'])
+    if processed_data.empty:
+        log.logger.warning("Script encerrado por falta de dados de notícia.")
+        exit(1)
     #print(processed_data['Url'])
     #get existing sources.
     get_list_of_db_sources = f.list_desired_values(_.db.select([_.veiculo.columns.site]))

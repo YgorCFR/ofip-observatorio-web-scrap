@@ -1,7 +1,10 @@
 const keywordService = require('../services/keyword');
+const filterService = require('../services/filter');
+
+const filter = require('../utils/enums/filter');
 
 const getAllKeyWords = (req, res, next) => {
-    return keywordService.getAllKeyWords(req, res, next)
+    return filterService.getFilterParams(filter.KEYWORD, req)
         .then(keywords => {
             res.send({
                 success: true,
@@ -9,7 +12,7 @@ const getAllKeyWords = (req, res, next) => {
             })
         })
         .catch(err=> {
-            res.send({
+            res.status(400).send({
                 success: false,
                 message: err
             })   

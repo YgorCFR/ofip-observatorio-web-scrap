@@ -1,0 +1,36 @@
+Arguments: 
+  C:\Program Files\Node\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @material-ui/core @material-ui/icons
+
+PATH: 
+  C:\Program Files\Actian\Client Runtime CR\ingres\bin;C:\Program Files\Actian\Client Runtime CR\ingres\utility;C:\app\ygor.carlos\product\12.1.0\client_1;C:\app\ygor.carlos\product\12.1.0\client_1\bin;C:\app\ygor.rolim\product\12.1.0\client_1;C:\app\ygor.rolim\product\12.1.0\client_1\bin;.;..;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Server 5.7.1\bin;C:\Python33;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\Elm\0.19\bin;C:\php;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files (x86)\Yarn\bin\;C:\Users\Ygor\AppData\Local\Programs\Python\Python37-32\Scripts;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\apache-maven-3.6.1\apache-maven\src\bin;C:\Program Files\Node\;C:\chromedriver_win32;C:\Program Files (x86)\Gow\bin;C:\opt\spark\spark-2.4.4-bin-hadoop2.7\bin;C:\Program Files\Microsoft VS Code\bin;C:\TDM-GCC-64\bin;C:\Program Files\OpenSSL-Win64\bin;C:\Redis;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Ygor\AppData\Roaming\npm;C:\Users\Ygor\AppData\Local\Microsoft\WindowsApps
+
+Yarn version: 
+  1.13.0
+
+Node version: 
+  10.16.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@material-ui/icons/-/icons-4.9.1.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:130024:19)
+      at Object.onceWrapper (events.js:286:20)
+      at ClientRequest.emit (events.js:198:13)
+      at TLSSocket.emitRequestTimeout (_http_client.js:662:40)
+      at Object.onceWrapper (events.js:286:20)
+      at TLSSocket.emit (events.js:198:13)
+      at TLSSocket.Socket._onTimeout (net.js:442:8)
+      at ontimeout (timers.js:436:11)
+      at tryOnTimeout (timers.js:300:5)
+      at listOnTimeout (timers.js:263:5)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -1,0 +1,5 @@
+export const registerConstants = {
+    REGISTER_REQUEST : 'REGISTERING',
+    REGISTER_SUCCESS: 'REGISTERED',
+    REGISTER_FAIL: 'REGISTER_FAIL'
+}; 

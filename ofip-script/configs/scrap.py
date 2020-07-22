@@ -119,7 +119,8 @@ def scrap(df):
         return df
 
 def drop_registers_with_inconsistence(df):
-    df = df[~df["News"].str.contains("{'name':", na=False)]
+    df = df[~df["News"].str.contains("{'name': ", na=False)]
+    df = df[~df["News"].str.contains("{'name': ", na=True )]
     return df
 
 def run_scrap_script(data_info, df):

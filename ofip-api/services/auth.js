@@ -31,7 +31,8 @@ const authenticate = (params,res) => {
         const payload = {
             email: user.email,
             id: user.id,
-            time: dateUtil.makeCurrentDateByCorrectTimeZone(new Date())
+            time: dateUtil.makeCurrentDateByCorrectTimeZone(new Date()),
+            key: user.cpf
         };
 
         var token = jwt.sign(payload, config.jwtSecret, {
@@ -40,7 +41,9 @@ const authenticate = (params,res) => {
 
         var authData = {
             token: token,
-            expiration: dateUtil.checkExpiration(config.tokenExpireTime, payload.time)
+            expiration: dateUtil.checkExpiration(config.tokenExpireTime, payload.time),
+            name: user.name,
+            key: user.cpf
         };
         
         getUserPermissions(user);
@@ -173,8 +176,11 @@ const refreshToken  =  (req, res, next) => {
 
 const logout = (req, res) => {
     let currentDate = new Date();
-    let remainingDate= new Date(req.cookies.token.expiration);
+    console.log(parseInt(currentDate.getTime(),10));
+    let remainingDate= req.query.expiration == undefined ? new Date() : new Date(req.query.expiration);
+    console.log(parseInt(remainingDate.getTime(),10));
     let token = req.cookies.token.token;
+    console.log(token);
     let key = cache.makeTheBlackListKey(token, config.blacklist); 
     let ttl = dateUtil.calculateDiffToExpiration(currentDate, remainingDate);
     return new Promise(
@@ -209,6 +215,7 @@ let getUserPermissions = (user) => {
         include: [{
          model: Profiles,
          attributes: ['id', 'nome'],
+         as: "profile_fk1",
          subQuery: false,
          required: true,
          include: [
@@ -241,11 +248,11 @@ let getUserPermissions = (user) => {
                 redis_key = res[keys].dataValues.cpf.toString();
                 user_data.user = {id: res[keys].dataValues.id, name: res[keys].dataValues.email, cpf: res[keys].dataValues.cpf};
                 user_data.perfil = {
-                  id:   res[keys].dataValues.perfil.dataValues.id,
-                  name: res[keys].dataValues.perfil.dataValues.nome
+                  id:   res[keys].dataValues.profile_fk1.dataValues.id,
+                  name: res[keys].dataValues.profile_fk1.dataValues.nome
                 };
                 
-                let routeArray =  res[keys].dataValues.perfil.dataValues.profile_fk0;
+                let routeArray =  res[keys].dataValues.profile_fk1.dataValues.profile_fk0;
                 
                 user_data.routes = [];
 

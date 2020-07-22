@@ -12,6 +12,10 @@
             "name": "register",
             "route": "/auth/register"
         },
+        "get_profiles": {
+            "name": "get_profiles",
+            "route": "/profile/profiles/all"
+        },
         "get_projects": {
             "name": "get_projects",
             "route": "/project/projects/all"
@@ -79,6 +83,10 @@
         "register_keyword" : {
             "name": "register-keyword",
             "route": "/keywords/register-keyword"
+        },
+        "get_vehicles": {
+            "name": "get-vehicles",
+            "route": "/vehicle/get-vehicles"
         }
     }
 }

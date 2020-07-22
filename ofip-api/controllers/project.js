@@ -1,14 +1,22 @@
 const projectService = require('../services/project');
+const filterService = require('../services/filter');
+
+const filter = require('../utils/enums/filter');
 
 function getProjects(req, res) {
-    projectService.getAll()
-    .then(
-        data => res.send(data)
-    ).catch(
-        error => {
-            throw error;
-        }
-    );
+    return filterService.getFilterParams(filter.PROJECT, req)
+        .then(projects => {
+            res.send({
+                success: true,
+                data: projects
+            })
+        })
+        .catch(err=> {
+            res.status(400).send({
+                success: false,
+                message: err
+            })   
+        })
 }
 
 function getProject(req, res) {

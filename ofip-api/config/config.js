@@ -2,7 +2,7 @@ module.exports = {
     host: 'https://localhost',
     apiName: 'api',
     apiVersion: 'v1',
-    port: 3000,
+    port: 5000,
     saltRounds: 2,
     jwtSecret: 'secretKey',
     tokenExpireTime: '6h',
@@ -16,7 +16,7 @@ module.exports = {
         secure: true,
         auth: {
             user: "projeto.ofip@id.uff.br",
-            password: "*********"
+            password: "ofip2020"
         }
     }
 };

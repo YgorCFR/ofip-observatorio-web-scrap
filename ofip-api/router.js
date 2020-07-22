@@ -2,7 +2,9 @@ const authController = require('./controllers/auth');
 const projectController = require('./controllers/project');
 const newsController = require('./controllers/news');
 const keywordController = require('./controllers/keyword');
+const vehicleController = require('./controllers/vehicle');
 const authMiddleware = require('./middlewares/auth');
+const profileController = require('./controllers/profile');
 
 const routes = require('./utils/routes_util');
 
@@ -104,4 +106,10 @@ module.exports.set = (app) => {
     app.post(`${root}${main.register_keyword.route}`, keywordController.registerKeyWords);
     //#endregion 
 
+    //#region Rotas de Veículo
+    app.get(`${root}${main.get_vehicles.route}`, vehicleController.getVehicles);
+    //#endregion
+
+    //#region Rotas de Perfil
+    app.get(`${root}${main.get_profiles.route}`, profileController.getProfiles);
 };
