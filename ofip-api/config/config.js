@@ -16,7 +16,7 @@ module.exports = {
         secure: true,
         auth: {
             user: "projeto.ofip@id.uff.br",
-            password: "ofip2020"
+            password: "*******"
         }
     }
 };
