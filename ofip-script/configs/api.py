@@ -1,8 +1,8 @@
 #Setting google's custom search api keys
 #API key
-api_key = "AIzaSyAwQNFH---OsZBZ8mFdYLOlfTxzTbMmsb8"
+api_key = "********************************"
 #id cse
-cse_id = "018325837677719991188:gtjiewtrkdm"
+cse_id = "*********************************"
 #import google search api module
 from googleapiclient.discovery import build
 
