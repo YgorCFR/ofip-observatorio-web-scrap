@@ -35,7 +35,7 @@ more-itertools==8.0.2
 mysql-connector==2.2.9
 mysql-connector-python==8.0.16
 newsapi-python==0.2.5
-numpy==1.16.4
+numpy==1.22.0
 packaging==19.2
 pandas==1.0.1
 parsel==1.5.2
