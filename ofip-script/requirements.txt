@@ -41,7 +41,7 @@ pandas==1.0.1
 parsel==1.5.2
 phantomjs==1.1.4
 pluggy==0.13.1
-protobuf==3.7.1
+protobuf==3.18.3
 py==1.8.0
 py4j==0.10.7
 pyasn1==0.4.7
